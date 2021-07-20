@@ -1,0 +1,8 @@
+In file included from [01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:5:0[m[K:
+[01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/include/offboard_ctrl.h:5:10:[m[K [01;31m[Kfatal error: [m[KLinearMath/btMatrix3x3.h: No such file or directory
+ #include [01;31m[K<LinearMath/btMatrix3x3.h>[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/offboard_ctrl.dir/src/offboard_ctrl.cpp.o] Error 1
+make[1]: *** [CMakeFiles/offboard_ctrl.dir/all] Error 2
+make: *** [all] Error 2

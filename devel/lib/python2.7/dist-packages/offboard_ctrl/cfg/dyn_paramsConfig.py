@@ -1,0 +1,1 @@
+/home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/lib/python2.7/dist-packages/offboard_ctrl/cfg/dyn_paramsConfig.py

@@ -1,0 +1,10 @@
+[01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:[m[K In member function ‘[01m[Kvoid OffboardFSM::mpcCommandCallback(const RollPitchYawrateThrustConstPtr&)[m[K’:
+[01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:281:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Katt[m[K’
+         [01;31m[Katt[m[K.body_rate.y = 0.0
+         [01;31m[K^~~[m[K
+[01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:283:27:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst _thrust_type {aka const geometry_msgs::Vector3_<std::allocator<void> >}[m[K’ to ‘[01m[Kmavros_msgs::AttitudeTarget_<std::allocator<void> >::_thrust_type {aka float}[m[K’ in assignment
+         att.thrust = msg->[01;31m[Kthrust[m[K;
+                           [01;31m[K^~~~~~[m[K
+make[2]: *** [CMakeFiles/offboard_ctrl.dir/src/offboard_ctrl.cpp.o] Error 1
+make[1]: *** [CMakeFiles/offboard_ctrl.dir/all] Error 2
+make: *** [all] Error 2

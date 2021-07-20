@@ -1,0 +1,9 @@
+\subsubsection usage Usage
+\verbatim
+<node name="offboard_ctrl" pkg="offboard_ctrl" type="offboard_ctrl">
+  <param name="d0" type="double" value="1.5" />
+  <param name="k0" type="double" value="0.01" />
+  <param name="thrust_scale" type="double" value="0.01" />
+</node>
+\endverbatim
+

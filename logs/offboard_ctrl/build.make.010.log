@@ -1,0 +1,5 @@
+[ 33%] Built target offboard_ctrl_gencfg
+[35m[1mScanning dependencies of target offboard_ctrl[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/offboard_ctrl.dir/src/offboard_ctrl.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/lib/offboard_ctrl/offboard_ctrl[0m
+[100%] Built target offboard_ctrl
