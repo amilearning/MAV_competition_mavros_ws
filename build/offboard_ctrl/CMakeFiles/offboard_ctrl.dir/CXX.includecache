@@ -2049,6 +2049,8 @@ geometry_msgs/PoseStamped.h
 -
 geometry_msgs/Quaternion.h
 -
+geometry_msgs/Transform.h
+-
 mavros_msgs/CommandBool.h
 -
 mavros_msgs/SetMode.h
@@ -2080,6 +2082,8 @@ tf2_ros/transform_broadcaster.h
 geometry_msgs/TransformStamped.h
 -
 trajectory_msgs/MultiDOFJointTrajectory.h
+-
+trajectory_msgs/MultiDOFJointTrajectoryPoint.h
 -
 sensor_msgs/LaserScan.h
 -

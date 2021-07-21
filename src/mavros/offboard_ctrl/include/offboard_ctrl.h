@@ -7,6 +7,7 @@
 #include <tf/transform_datatypes.h>
 #include <geometry_msgs/PoseStamped.h>
 #include <geometry_msgs/Quaternion.h>
+#include <geometry_msgs/Transform.h>
 #include <mavros_msgs/CommandBool.h>
 #include <mavros_msgs/SetMode.h>
 #include <mavros_msgs/State.h>
@@ -25,6 +26,7 @@
 #include <tf2_ros/transform_broadcaster.h>
 #include <geometry_msgs/TransformStamped.h>
 #include <trajectory_msgs/MultiDOFJointTrajectory.h>
+#include <trajectory_msgs/MultiDOFJointTrajectoryPoint.h>
 #include <sensor_msgs/LaserScan.h>
 #include <std_srvs/Empty.h>
 #include <std_srvs/Trigger.h>
@@ -56,12 +58,17 @@ private:
 
 
     ros::Timer cmdloop_timer_;
+    ros::Timer waypoint_iter_timer_; 
+    double waypoint_time_in_sec, waypoint_time_in_sec_prev, target_duration_time_in_sec;    
+    std::deque<ros::Duration> command_waiting_times_;
+
     ros::Timer lidar_timer_;
     
     ros::Publisher rpyt_pub;
     ros::Publisher position_target_pub;
     ros::Publisher local_pos_pub;
     ros::Publisher mpc_cmd_pub;
+    ros::Publisher manual_trj_pub;
     
     
     mav_msgs::RollPitchYawrateThrust mpc_cmd;
@@ -79,6 +86,9 @@ private:
     nav_msgs::Odometry odom_state; 
     mavros_msgs::AttitudeTarget att;
     trajectory_msgs::MultiDOFJointTrajectory waypoints;
+    bool manual_trj_switch_;
+    double target_x,target_y,target_z;
+    
     sensor_msgs::LaserScan lidar_data;
 
     double att_clb_time_in_sec, att_clb_time_in_sec_prev;
@@ -99,8 +109,10 @@ private:
  
     // control related callback
     void cmdloopCallback(const ros::TimerEvent &event);    
+    void waypointTimerCallback(const ros::TimerEvent &event); 
     void multiDOFJointCallback(const trajectory_msgs::MultiDOFJointTrajectoryConstPtr &msg);
     void mpcCommandCallback(const mav_msgs::RollPitchYawrateThrustConstPtr &msg);
+    void sendManualTrajectory();
 
 
     // sensors callback

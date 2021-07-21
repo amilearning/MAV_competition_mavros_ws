@@ -1,0 +1,18 @@
+[01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:[m[K In member function ‘[01m[Kvoid OffboardFSM::cmdloopCallback(const ros::TimerEvent&)[m[K’:
+[01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:321:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktest_pose[m[K’ was not declared in this scope
+             [01;31m[Ktest_pose[m[K.header.stamp = ros::Time::now();
+             [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:321:13:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kcurrent_pose[m[K’
+             [01;36m[Ktest_pose[m[K.header.stamp = ros::Time::now();
+             [01;36m[K^~~~~~~~~[m[K
+             [32m[Kcurrent_pose[m[K
+[01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:[m[K In member function ‘[01m[Kvoid OffboardFSM::multiDOFJointCallback(const MultiDOFJointTrajectoryConstPtr&)[m[K’:
+[01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:351:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kfor[m[K’
+     [01;31m[Kfor[m[K (int i=1 ; i < msg->points.size(); i++){
+     [01;31m[K^~~[m[K
+[01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:351:20:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+     for (int i=1 ; [01;31m[Ki[m[K < msg->points.size(); i++){
+                    [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/offboard_ctrl.dir/src/offboard_ctrl.cpp.o] Error 1
+make[1]: *** [CMakeFiles/offboard_ctrl.dir/all] Error 2
+make: *** [all] Error 2

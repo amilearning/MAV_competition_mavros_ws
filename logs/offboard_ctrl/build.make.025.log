@@ -1,0 +1,27 @@
+[ 33%] [34m[1mGenerating dynamic reconfigure files from cfg/dyn_params.cfg: /home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/include/offboard_ctrl/dyn_paramsConfig.h /home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/lib/python2.7/dist-packages/offboard_ctrl/cfg/dyn_paramsConfig.py[0m
+Generating reconfiguration files for dyn_params in offboard_ctrl
+Wrote header file in /home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/include/offboard_ctrl/dyn_paramsConfig.h
+[ 33%] Built target offboard_ctrl_gencfg
+[35m[1mScanning dependencies of target offboard_ctrl[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/offboard_ctrl.dir/src/offboard_ctrl.cpp.o[0m
+[01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:[m[K In member function ‘[01m[Kvoid OffboardFSM::check_drone_status()[m[K’:
+[01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:209:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kmanual_trj_switch[m[K’ was not declared in this scope
+     if([01;31m[Kmanual_trj_switch[m[K){
+        [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:209:8:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kmanual_trj_switch_[m[K’
+     if([01;36m[Kmanual_trj_switch[m[K){
+        [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+        [32m[Kmanual_trj_switch_[m[K
+[01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:210:9:[m[K [01;31m[Kerror: [m[K‘[01m[KsendManualTrajectory[m[K’ was not declared in this scope
+         [01;31m[KsendManualTrajectory[m[K();
+         [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:[m[K At global scope:
+[01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:353:40:[m[K [01;31m[Kerror: [m[Kno ‘[01m[Kvoid OffboardFSM::sendManualTrajectory()[m[K’ member function declared in class ‘[01m[KOffboardFSM[m[K’
+ void OffboardFSM::sendManualTrajectory([01;31m[K)[m[K{
+                                        [01;31m[K^[m[K
+CMakeFiles/offboard_ctrl.dir/build.make:62: recipe for target 'CMakeFiles/offboard_ctrl.dir/src/offboard_ctrl.cpp.o' failed
+make[2]: *** [CMakeFiles/offboard_ctrl.dir/src/offboard_ctrl.cpp.o] Error 1
+CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/offboard_ctrl.dir/all' failed
+make[1]: *** [CMakeFiles/offboard_ctrl.dir/all] Error 2
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

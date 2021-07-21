@@ -1,0 +1,17 @@
+[ 33%] Built target offboard_ctrl_gencfg
+[35m[1mScanning dependencies of target offboard_ctrl[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/offboard_ctrl.dir/src/offboard_ctrl.cpp.o[0m
+In file included from [01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:5:0[m[K:
+[01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/include/offboard_ctrl.h:114:31:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+     void sendManualTrajectory([01;31m[K)[m[K
+                               [01;31m[K^[m[K
+[01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:[m[K In member function ‘[01m[Kvoid OffboardFSM::sendManualTrajectory()[m[K’:
+[01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:361:15:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrajectory_msgs::MultiDOFJointTrajectoryPoint {aka struct trajectory_msgs::MultiDOFJointTrajectoryPoint_<std::allocator<void> >}[m[K’ has no member named ‘[01m[Kpush_back[m[K’
+     trj_point.[01;31m[Kpush_back[m[K(tmp);
+               [01;31m[K^~~~~~~~~[m[K
+CMakeFiles/offboard_ctrl.dir/build.make:62: recipe for target 'CMakeFiles/offboard_ctrl.dir/src/offboard_ctrl.cpp.o' failed
+make[2]: *** [CMakeFiles/offboard_ctrl.dir/src/offboard_ctrl.cpp.o] Error 1
+CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/offboard_ctrl.dir/all' failed
+make[1]: *** [CMakeFiles/offboard_ctrl.dir/all] Error 2
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2
