@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hojin/drone_ws2/mavros_ws/src/mavros/libmavconn
+CMAKE_SOURCE_DIR = /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/libmavconn
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hojin/drone_ws2/mavros_ws/build/libmavconn
+CMAKE_BINARY_DIR = /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/libmavconn
 
 # Utility rule file for clean_test_results.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/hojin/drone_ws2/mavros_ws/build/libmavconn
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
-	/usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/hojin/drone_ws2/mavros_ws/build/libmavconn/test_results
+	/usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/libmavconn/test_results
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/clean_test_results.dir/clean:
 .PHONY : CMakeFiles/clean_test_results.dir/clean
 
 CMakeFiles/clean_test_results.dir/depend:
-	cd /home/hojin/drone_ws2/mavros_ws/build/libmavconn && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hojin/drone_ws2/mavros_ws/src/mavros/libmavconn /home/hojin/drone_ws2/mavros_ws/src/mavros/libmavconn /home/hojin/drone_ws2/mavros_ws/build/libmavconn /home/hojin/drone_ws2/mavros_ws/build/libmavconn /home/hojin/drone_ws2/mavros_ws/build/libmavconn/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/libmavconn && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/libmavconn /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/libmavconn /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/libmavconn /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/libmavconn /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/libmavconn/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/clean_test_results.dir/depend
 

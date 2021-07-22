@@ -1,0 +1,11 @@
+[ 33%] [34m[1mGenerating dynamic reconfigure files from cfg/dyn_params.cfg: /home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/offboard_ctrl/include/offboard_ctrl/dyn_paramsConfig.h /home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/offboard_ctrl/lib/python2.7/dist-packages/offboard_ctrl/cfg/dyn_paramsConfig.py[0m
+Traceback (most recent call last):
+  File "/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl/cfg/dyn_params.cfg", line 11, in <module>
+    gen.add("arming",bool_t, 0, "arm the vehicle", false)
+NameError: name 'false' is not defined
+CMakeFiles/offboard_ctrl_gencfg.dir/build.make:63: recipe for target '/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/offboard_ctrl/include/offboard_ctrl/dyn_paramsConfig.h' failed
+make[2]: *** [/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/offboard_ctrl/include/offboard_ctrl/dyn_paramsConfig.h] Error 1
+CMakeFiles/Makefile2:104: recipe for target 'CMakeFiles/offboard_ctrl_gencfg.dir/all' failed
+make[1]: *** [CMakeFiles/offboard_ctrl_gencfg.dir/all] Error 2
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

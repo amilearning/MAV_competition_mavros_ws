@@ -67,14 +67,14 @@ set(offboard_ctrl_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(offboard_ctrl_SOURCE_PREFIX /home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl)
-  set(offboard_ctrl_DEVEL_PREFIX /home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl)
+  set(offboard_ctrl_SOURCE_PREFIX /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl)
+  set(offboard_ctrl_DEVEL_PREFIX /home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/offboard_ctrl)
   set(offboard_ctrl_INSTALL_PREFIX "")
   set(offboard_ctrl_PREFIX ${offboard_ctrl_DEVEL_PREFIX})
 else()
   set(offboard_ctrl_SOURCE_PREFIX "")
   set(offboard_ctrl_DEVEL_PREFIX "")
-  set(offboard_ctrl_INSTALL_PREFIX /home/hojin/drone_ws2/mavros_ws/install)
+  set(offboard_ctrl_INSTALL_PREFIX /home/slam01/dronw_ws/MAV_competition_mavros_ws/install)
   set(offboard_ctrl_PREFIX ${offboard_ctrl_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(offboard_ctrl_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/include;/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/include;/usr/include " STREQUAL " ")
+if(NOT "/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/offboard_ctrl/include;/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl/include;/usr/include " STREQUAL " ")
   set(offboard_ctrl_INCLUDE_DIRS "")
-  set(_include_dirs "/home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/include;/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/include;/usr/include")
+  set(_include_dirs "/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/offboard_ctrl/include;/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl/include;/usr/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,13 +110,13 @@ if(NOT "/home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/include;/ho
         message(FATAL_ERROR "Project 'offboard_ctrl' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'offboard_ctrl' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'offboard_ctrl' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl/${idir}'.  ${_report}")
     endif()
     _list_append_unique(offboard_ctrl_INCLUDE_DIRS ${include})
   endforeach()
 endif()
 
-set(libraries "mavros;/usr/lib/x86_64-linux-gnu/libboost_system.so")
+set(libraries "mavros;/usr/lib/aarch64-linux-gnu/libboost_system.so")
 foreach(library ${libraries})
   # keep build configuration keywords, target names and absolute libraries as-is
   if("${library}" MATCHES "^(debug|optimized|general)$")
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/lib;/home/hojin/drone_ws2/mavros_ws/devel/lib;/home/hojin/catkin_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/offboard_ctrl/lib;/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/lib;/home/slam01/catkin_ws_PBVS_yawfused/devel/lib;/home/slam01/catkin_ws_viconbridge/devel/lib;/home/slam01/catkin_ws_ublox/devel/lib;/home/slam01/catkin_ws_mocap_optitrack/devel/lib;/home/slam01/catkin_ws_bag2csv/devel/lib;/home/slam01/catkin_ws_aruco_5x5/devel/lib;/home/slam01/catkin_ws_aruco_7x7/devel/lib;/home/slam01/catkin_ws_matlab/devel/lib;/home/slam01/catkin_ws_optitrack_test/devel/lib;/home/slam01/catkin_ws_vrpn/devel/lib;/home/slam01/catkin_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

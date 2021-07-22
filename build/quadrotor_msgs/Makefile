@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hojin/drone_ws2/mavros_ws/src/mavros/quadrotor_msgs
+CMAKE_SOURCE_DIR = /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/quadrotor_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hojin/drone_ws2/mavros_ws/build/quadrotor_msgs
+CMAKE_BINARY_DIR = /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/quadrotor_msgs
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -103,8 +103,8 @@ install/fast: preinstall/fast
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -137,9 +137,9 @@ install/local/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hojin/drone_ws2/mavros_ws/build/quadrotor_msgs/CMakeFiles /home/hojin/drone_ws2/mavros_ws/build/quadrotor_msgs/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/quadrotor_msgs/CMakeFiles /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/quadrotor_msgs/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hojin/drone_ws2/mavros_ws/build/quadrotor_msgs/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/quadrotor_msgs/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -259,43 +259,17 @@ quadrotor_msgs_generate_messages_cpp/fast:
 .PHONY : quadrotor_msgs_generate_messages_cpp/fast
 
 #=============================================================================
-# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_Gains
+# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_LQRTrajectory
 
 # Build rule for target.
-_quadrotor_msgs_generate_messages_check_deps_Gains: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_Gains
-.PHONY : _quadrotor_msgs_generate_messages_check_deps_Gains
+_quadrotor_msgs_generate_messages_check_deps_LQRTrajectory: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_LQRTrajectory
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_LQRTrajectory
 
 # fast build rule for target.
-_quadrotor_msgs_generate_messages_check_deps_Gains/fast:
-	$(MAKE) -f CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_Gains.dir/build.make CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_Gains.dir/build
-.PHONY : _quadrotor_msgs_generate_messages_check_deps_Gains/fast
-
-#=============================================================================
-# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_Odometry
-
-# Build rule for target.
-_quadrotor_msgs_generate_messages_check_deps_Odometry: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_Odometry
-.PHONY : _quadrotor_msgs_generate_messages_check_deps_Odometry
-
-# fast build rule for target.
-_quadrotor_msgs_generate_messages_check_deps_Odometry/fast:
-	$(MAKE) -f CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_Odometry.dir/build.make CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_Odometry.dir/build
-.PHONY : _quadrotor_msgs_generate_messages_check_deps_Odometry/fast
-
-#=============================================================================
-# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_StatusData
-
-# Build rule for target.
-_quadrotor_msgs_generate_messages_check_deps_StatusData: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_StatusData
-.PHONY : _quadrotor_msgs_generate_messages_check_deps_StatusData
-
-# fast build rule for target.
-_quadrotor_msgs_generate_messages_check_deps_StatusData/fast:
-	$(MAKE) -f CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_StatusData.dir/build.make CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_StatusData.dir/build
-.PHONY : _quadrotor_msgs_generate_messages_check_deps_StatusData/fast
+_quadrotor_msgs_generate_messages_check_deps_LQRTrajectory/fast:
+	$(MAKE) -f CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_LQRTrajectory.dir/build.make CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_LQRTrajectory.dir/build
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_LQRTrajectory/fast
 
 #=============================================================================
 # Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_PolynomialTrajectory
@@ -311,30 +285,17 @@ _quadrotor_msgs_generate_messages_check_deps_PolynomialTrajectory/fast:
 .PHONY : _quadrotor_msgs_generate_messages_check_deps_PolynomialTrajectory/fast
 
 #=============================================================================
-# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_LQRTrajectory
+# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_Odometry
 
 # Build rule for target.
-_quadrotor_msgs_generate_messages_check_deps_LQRTrajectory: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_LQRTrajectory
-.PHONY : _quadrotor_msgs_generate_messages_check_deps_LQRTrajectory
+_quadrotor_msgs_generate_messages_check_deps_Odometry: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_Odometry
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_Odometry
 
 # fast build rule for target.
-_quadrotor_msgs_generate_messages_check_deps_LQRTrajectory/fast:
-	$(MAKE) -f CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_LQRTrajectory.dir/build.make CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_LQRTrajectory.dir/build
-.PHONY : _quadrotor_msgs_generate_messages_check_deps_LQRTrajectory/fast
-
-#=============================================================================
-# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_AuxCommand
-
-# Build rule for target.
-_quadrotor_msgs_generate_messages_check_deps_AuxCommand: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_AuxCommand
-.PHONY : _quadrotor_msgs_generate_messages_check_deps_AuxCommand
-
-# fast build rule for target.
-_quadrotor_msgs_generate_messages_check_deps_AuxCommand/fast:
-	$(MAKE) -f CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_AuxCommand.dir/build.make CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_AuxCommand.dir/build
-.PHONY : _quadrotor_msgs_generate_messages_check_deps_AuxCommand/fast
+_quadrotor_msgs_generate_messages_check_deps_Odometry/fast:
+	$(MAKE) -f CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_Odometry.dir/build.make CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_Odometry.dir/build
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_Odometry/fast
 
 #=============================================================================
 # Target rules for targets named quadrotor_msgs_generate_messages_py
@@ -363,6 +324,19 @@ _quadrotor_msgs_generate_messages_check_deps_Serial/fast:
 .PHONY : _quadrotor_msgs_generate_messages_check_deps_Serial/fast
 
 #=============================================================================
+# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_AuxCommand
+
+# Build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_AuxCommand: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_AuxCommand
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_AuxCommand
+
+# fast build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_AuxCommand/fast:
+	$(MAKE) -f CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_AuxCommand.dir/build.make CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_AuxCommand.dir/build
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_AuxCommand/fast
+
+#=============================================================================
 # Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_TRPYCommand
 
 # Build rule for target.
@@ -374,6 +348,32 @@ _quadrotor_msgs_generate_messages_check_deps_TRPYCommand: cmake_check_build_syst
 _quadrotor_msgs_generate_messages_check_deps_TRPYCommand/fast:
 	$(MAKE) -f CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_TRPYCommand.dir/build.make CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_TRPYCommand.dir/build
 .PHONY : _quadrotor_msgs_generate_messages_check_deps_TRPYCommand/fast
+
+#=============================================================================
+# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_StatusData
+
+# Build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_StatusData: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_StatusData
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_StatusData
+
+# fast build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_StatusData/fast:
+	$(MAKE) -f CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_StatusData.dir/build.make CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_StatusData.dir/build
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_StatusData/fast
+
+#=============================================================================
+# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_Gains
+
+# Build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_Gains: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_Gains
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_Gains
+
+# fast build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_Gains/fast:
+	$(MAKE) -f CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_Gains.dir/build.make CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_Gains.dir/build
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_Gains/fast
 
 #=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_nodejs
@@ -1081,16 +1081,16 @@ help:
 	@echo "... quadrotor_msgs_gencpp"
 	@echo "... quadrotor_msgs_generate_messages_nodejs"
 	@echo "... quadrotor_msgs_generate_messages_cpp"
-	@echo "... install/strip"
-	@echo "... _quadrotor_msgs_generate_messages_check_deps_Gains"
-	@echo "... _quadrotor_msgs_generate_messages_check_deps_Odometry"
-	@echo "... _quadrotor_msgs_generate_messages_check_deps_StatusData"
-	@echo "... _quadrotor_msgs_generate_messages_check_deps_PolynomialTrajectory"
 	@echo "... _quadrotor_msgs_generate_messages_check_deps_LQRTrajectory"
-	@echo "... _quadrotor_msgs_generate_messages_check_deps_AuxCommand"
+	@echo "... _quadrotor_msgs_generate_messages_check_deps_PolynomialTrajectory"
+	@echo "... _quadrotor_msgs_generate_messages_check_deps_Odometry"
 	@echo "... quadrotor_msgs_generate_messages_py"
 	@echo "... _quadrotor_msgs_generate_messages_check_deps_Serial"
+	@echo "... _quadrotor_msgs_generate_messages_check_deps_AuxCommand"
 	@echo "... _quadrotor_msgs_generate_messages_check_deps_TRPYCommand"
+	@echo "... _quadrotor_msgs_generate_messages_check_deps_StatusData"
+	@echo "... install/strip"
+	@echo "... _quadrotor_msgs_generate_messages_check_deps_Gains"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_eus"

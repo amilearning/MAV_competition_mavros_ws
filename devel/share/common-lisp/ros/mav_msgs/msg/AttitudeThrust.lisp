@@ -1,1 +1,1 @@
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mav_msgs/share/common-lisp/ros/mav_msgs/msg/AttitudeThrust.lisp
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mav_msgs/share/common-lisp/ros/mav_msgs/msg/AttitudeThrust.lisp

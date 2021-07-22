@@ -1,1 +1,1 @@
-/home/hojin/drone_ws2/mavros_ws/devel/.private/planner_msgs/lib/python2.7/dist-packages/planner_msgs/msg/_PlannerLogger.py
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/planner_msgs/lib/python2.7/dist-packages/planner_msgs/msg/_PlannerLogger.py

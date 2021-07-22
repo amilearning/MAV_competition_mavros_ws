@@ -1,1 +1,1 @@
-set(ORDERED_PATHS "/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros/lib;/home/hojin/drone_ws2/mavros_ws/devel/.private/libmavconn/lib;/opt/ros/melodic/lib")
+set(ORDERED_PATHS "/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros/lib;/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/libmavconn/lib;/opt/ros/melodic/lib")

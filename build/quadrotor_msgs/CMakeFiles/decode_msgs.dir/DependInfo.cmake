@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/hojin/drone_ws2/mavros_ws/src/mavros/quadrotor_msgs/src/decode_msgs.cpp" "/home/hojin/drone_ws2/mavros_ws/build/quadrotor_msgs/CMakeFiles/decode_msgs.dir/src/decode_msgs.cpp.o"
+  "/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/quadrotor_msgs/src/decode_msgs.cpp" "/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/quadrotor_msgs/CMakeFiles/decode_msgs.dir/src/decode_msgs.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,10 +17,10 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/hojin/drone_ws2/mavros_ws/devel/.private/quadrotor_msgs/include"
+  "/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/quadrotor_msgs/include"
   "/opt/ros/melodic/include"
   "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
-  "/home/hojin/drone_ws2/mavros_ws/src/mavros/quadrotor_msgs/include"
+  "/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/quadrotor_msgs/include"
   "/usr/include/eigen3"
   )
 

@@ -1,1 +1,1 @@
-/home/hojin/drone_ws2/mavros_ws/devel/.private/test_mavros/share/test_mavros/cmake/test_mavrosConfig-version.cmake
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/test_mavros/share/test_mavros/cmake/test_mavrosConfig-version.cmake

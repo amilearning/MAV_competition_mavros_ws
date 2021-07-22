@@ -1,6 +1,6 @@
-devel_space: /home/hojin/drone_ws2/mavros_ws/devel
+devel_space: /home/slam01/dronw_ws/MAV_competition_mavros_ws/devel
 install: false
-install_space: /home/hojin/drone_ws2/mavros_ws/install
+install_space: /home/slam01/dronw_ws/MAV_competition_mavros_ws/install
 profile: default
-source_space: /home/hojin/drone_ws2/mavros_ws/src
-workspace: /home/hojin/drone_ws2/mavros_ws
+source_space: /home/slam01/dronw_ws/MAV_competition_mavros_ws/src
+workspace: /home/slam01/dronw_ws/MAV_competition_mavros_ws

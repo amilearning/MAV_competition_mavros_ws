@@ -5,8 +5,6 @@
 #include "offboard_ctrl.h"
 
 
-
-
 OffboardFSM::~OffboardFSM() {}
 
 OffboardFSM::OffboardFSM(const ros::NodeHandle& nh, const ros::NodeHandle& nh_private)
@@ -17,14 +15,17 @@ OffboardFSM::OffboardFSM(const ros::NodeHandle& nh, const ros::NodeHandle& nh_pr
     mpcCommand_sub = nh_.subscribe<mav_msgs::RollPitchYawrateThrust>("/m100/setpoint_raw/roll_pitch_yawrate_thrust",1,&OffboardFSM::mpcCommandCallback,this);        
     multiDOFJointSub = nh_.subscribe<trajectory_msgs::MultiDOFJointTrajectory>("/m100/command/trajectory",10,&OffboardFSM::multiDOFJointCallback,this);        
     // odom_sub = nh.subscribe<nav_msgs::Odometry>("/mavros/local_position/odom",10, &odom_cb);
-    odom_sub = nh_.subscribe<nav_msgs::Odometry>("/ground_truth_pose",10, &OffboardFSM::odom_cb,this);
+    odom_sub = nh_.subscribe<nav_msgs::Odometry>("/mavros/local_position/odom",10, &OffboardFSM::odom_cb,this);
     lidar_sub = nh_.subscribe<sensor_msgs::LaserScan>("/laser/scan",1,&OffboardFSM::lidarCallback,this);    
     state_sub = nh_.subscribe<mavros_msgs::State>("mavros/state", 10, &OffboardFSM::state_cb,this);
+    rc_input_sub = nh_.subscribe<mavros_msgs::RCIn>("/mavros/rc/in", 10, &OffboardFSM::RCinCallback,this);
+    // waypoint_iter_timer_ = nh_.createTimer(ros::Duration(0.0), &OffboardFSM::waypointTimerCallback,this,true,false); 
     // lidar_timer_ = nh_.createTimer(ros::Duration(0.1), &OffboardFSM::lidarTimeCallback,this); 
     cmdloop_timer_ = nh_.createTimer(ros::Duration(0.001), &OffboardFSM::cmdloopCallback,this); 
     // ros::Subscriber att_thrust_sub = nh.subscribe<mav_msgs::RollPitchYawrateThrust>
     //         ("/lmpc/roll_pitch_yawrate_thrust", 10, rpyt_cb);
-    
+    rc_input_pub =  nh_.advertise<sensor_msgs::Joy>("/rc_in",5);
+    manual_trj_pub =  nh_.advertise<trajectory_msgs::MultiDOFJointTrajectory>("/command/trajectory",5);
     mpc_cmd_pub =  nh_.advertise<mav_msgs::RollPitchYawrateThrust>("/mavros/setpoint_raw/roll_pitch_yawrate_thrust",5);
     rpyt_pub = nh_.advertise<mavros_msgs::AttitudeTarget>("/mavros/setpoint_raw/attitude",10);
     position_target_pub = nh_.advertise<mavros_msgs::PositionTarget>("/mavros/setpoint_raw/local", 10);    
@@ -40,7 +41,10 @@ OffboardFSM::OffboardFSM(const ros::NodeHandle& nh, const ros::NodeHandle& nh_pr
 
     ros::param::set("d0",2.0);
     ros::param::set("k0",0.5);
-    ros::param::set("thrust_scale",0.035);
+    ros::param::set("thrust_scale",0.001);
+    ros::param::set("vehicle_arming",false);
+    
+    
     
     ROS_INFO_STREAM("d0 is set to be = " << d0);
     ROS_INFO_STREAM("k0 is set to be = " << k0);
@@ -50,6 +54,9 @@ OffboardFSM::OffboardFSM(const ros::NodeHandle& nh, const ros::NodeHandle& nh_pr
     mpc_cmd_enable = true;
     send_waypoint = false;
     avoidance_enable = false;
+    vehicle_arming = false;
+
+    
 
     
     //the setpoint publishing rate MUST be faster than 2Hz
@@ -67,18 +74,22 @@ OffboardFSM::OffboardFSM(const ros::NodeHandle& nh, const ros::NodeHandle& nh_pr
 
     ROS_INFO("Now we are entering FSM");    
     while(ros::ok()){
-        if( current_state.mode != "OFFBOARD" &&
-            (ros::Time::now() - last_request > ros::Duration(1.0))){
-            // if( set_mode_client.call(offb_set_mode) && offb_set_mode.response.mode_sent){ROS_INFO("Offboard enabled");}
-            if( set_mode_client.call(offb_set_mode) ){ROS_INFO("Offboard enabled");}
-            last_request = ros::Time::now();
-        } else {
-          
-            if( !current_state.armed && (ros::Time::now() - last_request > ros::Duration(1.0))){
-                // if( arming_client.call(arm_cmd) && arm_cmd.response.success){ROS_INFO("Vehicle armed");}
-                if( arming_client.call(arm_cmd) ){ROS_INFO("Vehicle armed");}
-                last_request = ros::Time::now();}
-        }        
+        if(vehicle_arming){                
+            if( current_state.mode != "OFFBOARD" &&
+                (ros::Time::now() - last_request > ros::Duration(1.0))){
+                // if( set_mode_client.call(offb_set_mode) && offb_set_mode.response.mode_sent){ROS_INFO("Offboard enabled");}
+                if( set_mode_client.call(offb_set_mode) ){ROS_INFO("Offboard enabled");}
+                last_request = ros::Time::now();
+            } else {            
+                if( !current_state.armed && (ros::Time::now() - last_request > ros::Duration(1.0))){
+                    // if( arming_client.call(arm_cmd) && arm_cmd.response.success){ROS_INFO("Vehicle armed");}
+                    if( arming_client.call(arm_cmd) ){ROS_INFO("Vehicle armed"); vehicle_arming = false;}
+                    last_request = ros::Time::now();}
+            }        
+        }
+        
+    
+        
         
         // rpyt_pub.publish(att);
         // local_pos_pub.publish(pose);
@@ -113,11 +124,31 @@ OffboardFSM::OffboardFSM(const ros::NodeHandle& nh, const ros::NodeHandle& nh_pr
 }
 
 
+void OffboardFSM::RCinCallback(const mavros_msgs::RCIn::ConstPtr &msg){        
+    sensor_msgs::Joy joy_msgs;
+    rc_iunput = *msg;    
+    for (int i= 0; i < 5; i++){
+        double tmp = (rc_iunput.channels[i]-1530.0)/400.0;
+        if (abs(tmp) < rc_dead_zone_){
+            tmp = 0.0;
+        }
+        joy_msgs.axes.push_back(tmp);
+    }        
+    joy_msgs.header = rc_iunput.header;
+    rc_input_pub.publish(joy_msgs);    
+}
+
 
 void OffboardFSM::dyn_callback(const offboard_ctrl::dyn_paramsConfig &config, uint32_t level) {  
             d0 = config.d0;
             k0 = config.k0;
             thrust_scale = config.thrust_scale;
+            vehicle_arming = config.arming;
+            manual_trj_switch_ = config.manual_trj_switch;
+            target_x=config.target_x;
+            target_y=config.target_y;
+            target_z=config.target_z;
+            rc_dead_zone_ = config.rc_dead_zone;
             ROS_INFO("d0 = %f, k= %f, thrust_scale = %f", d0,k0,thrust_scale);            
 }
 
@@ -178,6 +209,8 @@ void OffboardFSM::local_avoidance(){
 void OffboardFSM::refine_path_via_lidarData(){
     // delete below as this is for lidar testing
     waypoints.points.clear();
+    command_waiting_times_.clear();
+    waypoints_itr = 0;
     //TODO - refine path using the 2d lidar data && current pose     
     ROS_INFO("trajectory has been refined");
 }
@@ -195,10 +228,16 @@ void OffboardFSM::check_drone_status(){
         mpc_cmd_enable = true;
     }
     
+     if(manual_trj_switch_){
+        sendManualTrajectory();  
+              
+    }
     
     
     return;
 }
+
+
 
 void OffboardFSM::lidarTimeCallback(const ros::TimerEvent& e){
     if (lidar_data.ranges.size() < 1){
@@ -298,15 +337,52 @@ void OffboardFSM::cmdloopCallback(const ros::TimerEvent &event) {
     
     
     if (mpc_cmd_enable){        
-        ROS_INFO("mpc command pub");
+        // ROS_INFO("mpc command pub");
         // mpc_cmd_pub.publish(mpc_cmd);
         rpyt_pub.publish(att);
         
         return;
     }
     
+
+    // if (waypoints.points.size() > 0){        
+    //     if (waypoints_itr >= 0 && waypoints_itr < waypoints.points.size()){            
+    //         pose_target_.header.stamp = ros::Time::now();
+    //         pose_target_.header.frame_id ='c';        
+    //         pose_target_.coordinate_frame = 1; // mavros_msgs::PositionTarget::FRAME_LOCAL_NED;            
+    //         // pose_target_.type_mask = mavros_msgs::PositionTarget::IGNORE_AFX | mavros_msgs::PositionTarget::IGNORE_AFY | mavros_msgs::PositionTarget::IGNORE_AFZ |
+    //         // mavros_msgs::PositionTarget::IGNORE_YAW | mavros_msgs::PositionTarget::IGNORE_YAW_RATE;            
+    //         pose_target_.position.x = waypoints.points[waypoints_itr].transforms[0].translation.x;
+    //         pose_target_.position.y = waypoints.points[waypoints_itr].transforms[0].translation.y;
+    //         pose_target_.position.z = waypoints.points[waypoints_itr].transforms[0].translation.z;               
+    //         tf::Quaternion q(waypoints.points[waypoints_itr].transforms[0].rotation.x,waypoints.points[waypoints_itr].transforms[0].rotation.y,waypoints.points[waypoints_itr].transforms[0].rotation.z,waypoints.points[waypoints_itr].transforms[0].rotation.w);
+    //         tf::Matrix3x3 m(q);            
+    //         double roll, pitch, yaw;
+    //         m.getRPY(roll, pitch, yaw);        
+    //         pose_target_.yaw = yaw;
+                     
+    //         send_waypoint = true;            
+    //     }       
+    // } 
       
 
+}
+
+
+void OffboardFSM::sendManualTrajectory(){
+    ROS_INFO("manual input send");
+    waypoints.points.clear();    
+    waypoints_itr = 0;
+    trajectory_msgs::MultiDOFJointTrajectoryPoint trj_point; 
+    geometry_msgs::Transform tmp; 
+    tmp.translation.x = target_x;     tmp.translation.y = target_y;     tmp.translation.z = target_z;
+    tmp.rotation.x = 0.0;     tmp.rotation.y = 0.0;     tmp.rotation.z = 0.0;     tmp.rotation.w = 1.0;
+    trj_point.transforms.push_back(tmp);    
+    waypoints.points.push_back(trj_point);     
+    manual_trj_pub.publish(waypoints);
+    waypoints.points.clear();
+
+    
 }
 
 void OffboardFSM::multiDOFJointCallback(const trajectory_msgs::MultiDOFJointTrajectoryConstPtr &msg) {  
@@ -317,7 +393,11 @@ void OffboardFSM::multiDOFJointCallback(const trajectory_msgs::MultiDOFJointTraj
   if (msg->points.size() > 1){    
     waypoints.points = msg->points;    
     // ROS_INFO("Trjectory length = %d",msg->points.size());
-  waypoints_itr = 0; 
+   waypoints_itr = 0; 
+    command_waiting_times_.clear();
+    for (int i=1 ; i < msg->points.size(); i++){      
+        command_waiting_times_.push_back(msg->points[i].time_from_start  - msg->points[i-1].time_from_start );
+    }
   }
 }
 
@@ -362,8 +442,7 @@ void OffboardFSM::set_target_pose(double x,double y, double z, double yaw){
 int main(int argc, char** argv){
     ros::init(argc, argv, "offboard_ctrl");
     ros::NodeHandle nh;
-    ros::NodeHandle nh_private("~");
-      ROS_INFO("sdlksamds");
+    ros::NodeHandle nh_private("~");      
     OffboardFSM offb_fsm(nh,nh_private);
 
     ros::spin();

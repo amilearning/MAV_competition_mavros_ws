@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl
+CMAKE_SOURCE_DIR = /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hojin/drone_ws2/mavros_ws/build/offboard_ctrl
+CMAKE_BINARY_DIR = /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/offboard_ctrl
 
 # Utility rule file for roscpp_generate_messages_nodejs.
 
@@ -67,6 +67,6 @@ CMakeFiles/roscpp_generate_messages_nodejs.dir/clean:
 .PHONY : CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
 
 CMakeFiles/roscpp_generate_messages_nodejs.dir/depend:
-	cd /home/hojin/drone_ws2/mavros_ws/build/offboard_ctrl && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl /home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl /home/hojin/drone_ws2/mavros_ws/build/offboard_ctrl /home/hojin/drone_ws2/mavros_ws/build/offboard_ctrl /home/hojin/drone_ws2/mavros_ws/build/offboard_ctrl/CMakeFiles/roscpp_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/offboard_ctrl && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/offboard_ctrl /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/offboard_ctrl /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/offboard_ctrl/CMakeFiles/roscpp_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/roscpp_generate_messages_nodejs.dir/depend
 

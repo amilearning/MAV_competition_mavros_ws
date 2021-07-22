@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hojin/drone_ws2/mavros_ws/src/mavros/mavros_extras
+CMAKE_SOURCE_DIR = /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/mavros_extras
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hojin/drone_ws2/mavros_ws/build/mavros_extras
+CMAKE_BINARY_DIR = /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros_extras
 
 # Include any dependencies generated for this target.
 include CMakeFiles/visualization.dir/depend.make
@@ -58,17 +58,17 @@ include CMakeFiles/visualization.dir/progress.make
 include CMakeFiles/visualization.dir/flags.make
 
 CMakeFiles/visualization.dir/src/visualization.cpp.o: CMakeFiles/visualization.dir/flags.make
-CMakeFiles/visualization.dir/src/visualization.cpp.o: /home/hojin/drone_ws2/mavros_ws/src/mavros/mavros_extras/src/visualization.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hojin/drone_ws2/mavros_ws/build/mavros_extras/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/visualization.dir/src/visualization.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/visualization.dir/src/visualization.cpp.o -c /home/hojin/drone_ws2/mavros_ws/src/mavros/mavros_extras/src/visualization.cpp
+CMakeFiles/visualization.dir/src/visualization.cpp.o: /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/mavros_extras/src/visualization.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros_extras/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/visualization.dir/src/visualization.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/visualization.dir/src/visualization.cpp.o -c /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/mavros_extras/src/visualization.cpp
 
 CMakeFiles/visualization.dir/src/visualization.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/visualization.dir/src/visualization.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hojin/drone_ws2/mavros_ws/src/mavros/mavros_extras/src/visualization.cpp > CMakeFiles/visualization.dir/src/visualization.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/mavros_extras/src/visualization.cpp > CMakeFiles/visualization.dir/src/visualization.cpp.i
 
 CMakeFiles/visualization.dir/src/visualization.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/visualization.dir/src/visualization.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hojin/drone_ws2/mavros_ws/src/mavros/mavros_extras/src/visualization.cpp -o CMakeFiles/visualization.dir/src/visualization.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/mavros_extras/src/visualization.cpp -o CMakeFiles/visualization.dir/src/visualization.cpp.s
 
 CMakeFiles/visualization.dir/src/visualization.cpp.o.requires:
 
@@ -88,58 +88,58 @@ visualization_OBJECTS = \
 # External object files for target visualization
 visualization_EXTERNAL_OBJECTS =
 
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: CMakeFiles/visualization.dir/src/visualization.cpp.o
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: CMakeFiles/visualization.dir/build.make
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /home/hojin/drone_ws2/mavros_ws/devel/.private/mavros/lib/libmavros.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/x86_64-linux-gnu/libGeographic.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/libdiagnostic_updater.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/libeigen_conversions.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/liborocos-kdl.so.1.4.0
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /home/hojin/drone_ws2/mavros_ws/devel/.private/libmavconn/lib/libmavconn.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/libtf.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/libtf2_ros.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/libactionlib.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/libmessage_filters.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/libtf2.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/liburdf.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/x86_64-linux-gnu/liburdfdom_model.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/x86_64-linux-gnu/liburdfdom_world.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/x86_64-linux-gnu/libtinyxml.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/libclass_loader.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/libPocoFoundation.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/x86_64-linux-gnu/libdl.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/libroslib.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/librospack.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/x86_64-linux-gnu/libpython2.7.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/librosconsole_bridge.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/libroscpp.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/librosconsole.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/librosconsole_log4cxx.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/libxmlrpcpp.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/librostime.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/libcpp_common.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: CMakeFiles/visualization.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hojin/drone_ws2/mavros_ws/build/mavros_extras/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization"
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: CMakeFiles/visualization.dir/src/visualization.cpp.o
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: CMakeFiles/visualization.dir/build.make
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros/lib/libmavros.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/aarch64-linux-gnu/libGeographic.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/libdiagnostic_updater.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/libeigen_conversions.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/liborocos-kdl.so.1.4.0
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/libmavconn/lib/libmavconn.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/libtf.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/libtf2_ros.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/libactionlib.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/libmessage_filters.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/libtf2.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/liburdf.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/aarch64-linux-gnu/liburdfdom_sensor.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/aarch64-linux-gnu/liburdfdom_model_state.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/aarch64-linux-gnu/liburdfdom_model.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/aarch64-linux-gnu/liburdfdom_world.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/aarch64-linux-gnu/libtinyxml.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/libclass_loader.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/libPocoFoundation.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/aarch64-linux-gnu/libdl.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/libroslib.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/librospack.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/aarch64-linux-gnu/libpython2.7.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/aarch64-linux-gnu/libboost_program_options.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/aarch64-linux-gnu/libtinyxml2.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/librosconsole_bridge.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/libroscpp.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/librosconsole.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/aarch64-linux-gnu/liblog4cxx.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/aarch64-linux-gnu/libboost_regex.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/librostime.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /opt/ros/melodic/lib/libcpp_common.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/aarch64-linux-gnu/libboost_system.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/aarch64-linux-gnu/libboost_thread.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/aarch64-linux-gnu/libboost_chrono.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/aarch64-linux-gnu/libboost_date_time.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/aarch64-linux-gnu/libboost_atomic.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/aarch64-linux-gnu/libpthread.so
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization: CMakeFiles/visualization.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros_extras/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/visualization.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/visualization.dir/build: /home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization
+CMakeFiles/visualization.dir/build: /home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/visualization
 
 .PHONY : CMakeFiles/visualization.dir/build
 
@@ -152,6 +152,6 @@ CMakeFiles/visualization.dir/clean:
 .PHONY : CMakeFiles/visualization.dir/clean
 
 CMakeFiles/visualization.dir/depend:
-	cd /home/hojin/drone_ws2/mavros_ws/build/mavros_extras && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hojin/drone_ws2/mavros_ws/src/mavros/mavros_extras /home/hojin/drone_ws2/mavros_ws/src/mavros/mavros_extras /home/hojin/drone_ws2/mavros_ws/build/mavros_extras /home/hojin/drone_ws2/mavros_ws/build/mavros_extras /home/hojin/drone_ws2/mavros_ws/build/mavros_extras/CMakeFiles/visualization.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros_extras && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/mavros_extras /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/mavros_extras /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros_extras /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros_extras /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros_extras/CMakeFiles/visualization.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/visualization.dir/depend
 

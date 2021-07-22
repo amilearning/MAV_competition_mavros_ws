@@ -1,0 +1,7 @@
+[01m[K/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:[m[K In member function ‘[01m[Kvoid OffboardFSM::RCinCallback(const ConstPtr&)[m[K’:
+[01m[K/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:129:45:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kdata[m[K’ in ‘[01m[K(& msg)->boost::shared_ptr<const mavros_msgs::RCIn_<std::allocator<void> > >::operator->()->mavros_msgs::RCIn_<std::allocator<void> >::channels.std::vector<short unsigned int>::operator[](((std::vector<short unsigned int>::size_type)i))[m[K’, which is of non-class type ‘[01m[Kconst value_type {aka const short unsigned int}[m[K’
+         joy_msgs.axes[i] = msg->channels[i].[01;31m[Kdata[m[K;
+                                             [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/offboard_ctrl.dir/src/offboard_ctrl.cpp.o] Error 1
+make[1]: *** [CMakeFiles/offboard_ctrl.dir/all] Error 2
+make: *** [all] Error 2

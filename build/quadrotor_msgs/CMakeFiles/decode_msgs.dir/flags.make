@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"quadrotor_msgs\" -Ddecode_msgs_EXPORTS
 
-CXX_INCLUDES = -I/home/hojin/drone_ws2/mavros_ws/devel/.private/quadrotor_msgs/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/hojin/drone_ws2/mavros_ws/src/mavros/quadrotor_msgs/include -I/usr/include/eigen3 
+CXX_INCLUDES = -I/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/quadrotor_msgs/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/quadrotor_msgs/include -I/usr/include/eigen3 
 

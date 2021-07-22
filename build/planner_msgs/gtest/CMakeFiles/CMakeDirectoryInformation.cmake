@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/usr/src/googletest")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/hojin/drone_ws2/mavros_ws/build/planner_msgs")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/planner_msgs")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

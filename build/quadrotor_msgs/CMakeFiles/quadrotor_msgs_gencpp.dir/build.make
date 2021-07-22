@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hojin/drone_ws2/mavros_ws/src/mavros/quadrotor_msgs
+CMAKE_SOURCE_DIR = /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/quadrotor_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hojin/drone_ws2/mavros_ws/build/quadrotor_msgs
+CMAKE_BINARY_DIR = /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/quadrotor_msgs
 
 # Utility rule file for quadrotor_msgs_gencpp.
 
@@ -67,6 +67,6 @@ CMakeFiles/quadrotor_msgs_gencpp.dir/clean:
 .PHONY : CMakeFiles/quadrotor_msgs_gencpp.dir/clean
 
 CMakeFiles/quadrotor_msgs_gencpp.dir/depend:
-	cd /home/hojin/drone_ws2/mavros_ws/build/quadrotor_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hojin/drone_ws2/mavros_ws/src/mavros/quadrotor_msgs /home/hojin/drone_ws2/mavros_ws/src/mavros/quadrotor_msgs /home/hojin/drone_ws2/mavros_ws/build/quadrotor_msgs /home/hojin/drone_ws2/mavros_ws/build/quadrotor_msgs /home/hojin/drone_ws2/mavros_ws/build/quadrotor_msgs/CMakeFiles/quadrotor_msgs_gencpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/quadrotor_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/quadrotor_msgs /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/quadrotor_msgs /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/quadrotor_msgs /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/quadrotor_msgs /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/quadrotor_msgs/CMakeFiles/quadrotor_msgs_gencpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/quadrotor_msgs_gencpp.dir/depend
 

@@ -3,7 +3,13 @@
 <node name="offboard_ctrl" pkg="offboard_ctrl" type="offboard_ctrl">
   <param name="d0" type="double" value="1.5" />
   <param name="k0" type="double" value="0.01" />
-  <param name="thrust_scale" type="double" value="0.01" />
+  <param name="thrust_scale" type="double" value="0.001" />
+  <param name="rc_dead_zone" type="double" value="0.01" />
+  <param name="arming" type="bool" value="False" />
+  <param name="manual_trj_switch" type="bool" value="False" />
+  <param name="target_x" type="double" value="0.0" />
+  <param name="target_y" type="double" value="0.0" />
+  <param name="target_z" type="double" value="0.0" />
 </node>
 \endverbatim
 

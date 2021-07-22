@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/hojin/drone_ws2/mavros_ws/devel/include/mavros_msgs/RCOut.h
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/include/mavros_msgs/RCOut.h
 string
 -
 vector
@@ -24,7 +24,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/hojin/drone_ws2/mavros_ws/src/mavros/mavros_extras/src/servo_state_publisher.cpp
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/mavros_extras/src/servo_state_publisher.cpp
 ros/ros.h
 -
 ros/console.h

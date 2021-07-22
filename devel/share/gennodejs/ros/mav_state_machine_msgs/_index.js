@@ -1,1 +1,1 @@
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mav_state_machine_msgs/share/gennodejs/ros/mav_state_machine_msgs/_index.js
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mav_state_machine_msgs/share/gennodejs/ros/mav_state_machine_msgs/_index.js

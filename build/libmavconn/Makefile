@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hojin/drone_ws2/mavros_ws/src/mavros/libmavconn
+CMAKE_SOURCE_DIR = /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/libmavconn
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hojin/drone_ws2/mavros_ws/build/libmavconn
+CMAKE_BINARY_DIR = /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/libmavconn
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -91,8 +91,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -137,9 +137,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hojin/drone_ws2/mavros_ws/build/libmavconn/CMakeFiles /home/hojin/drone_ws2/mavros_ws/build/libmavconn/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/libmavconn/CMakeFiles /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/libmavconn/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hojin/drone_ws2/mavros_ws/build/libmavconn/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/libmavconn/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

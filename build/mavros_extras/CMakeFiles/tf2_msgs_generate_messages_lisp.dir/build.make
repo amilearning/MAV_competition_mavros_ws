@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hojin/drone_ws2/mavros_ws/src/mavros/mavros_extras
+CMAKE_SOURCE_DIR = /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/mavros_extras
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hojin/drone_ws2/mavros_ws/build/mavros_extras
+CMAKE_BINARY_DIR = /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros_extras
 
 # Utility rule file for tf2_msgs_generate_messages_lisp.
 
@@ -67,6 +67,6 @@ CMakeFiles/tf2_msgs_generate_messages_lisp.dir/clean:
 .PHONY : CMakeFiles/tf2_msgs_generate_messages_lisp.dir/clean
 
 CMakeFiles/tf2_msgs_generate_messages_lisp.dir/depend:
-	cd /home/hojin/drone_ws2/mavros_ws/build/mavros_extras && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hojin/drone_ws2/mavros_ws/src/mavros/mavros_extras /home/hojin/drone_ws2/mavros_ws/src/mavros/mavros_extras /home/hojin/drone_ws2/mavros_ws/build/mavros_extras /home/hojin/drone_ws2/mavros_ws/build/mavros_extras /home/hojin/drone_ws2/mavros_ws/build/mavros_extras/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros_extras && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/mavros_extras /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/mavros_extras /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros_extras /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros_extras /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros_extras/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tf2_msgs_generate_messages_lisp.dir/depend
 

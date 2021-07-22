@@ -10,6 +10,9 @@
 #include <mavros_msgs/CommandBool.h>
 #include <mavros_msgs/SetMode.h>
 #include <mavros_msgs/State.h>
+#include <mavros_msgs/State.h>
+#include <mavros_msgs/RCIn.h>
+
 #include <mavros_msgs/PositionTarget.h>
 #include <mavros_msgs/AttitudeTarget.h>
 #include <quadrotor_msgs/PositionCommand.h>
@@ -28,6 +31,8 @@
 #include <sensor_msgs/LaserScan.h>
 #include <std_srvs/Empty.h>
 #include <std_srvs/Trigger.h>
+#include <sensor_msgs/Joy.h>
+
 
 
 
@@ -53,16 +58,26 @@ private:
     ros::Subscriber state_sub;
     ros::Subscriber lidar_sub;
     ros::Subscriber mpcCommand_sub;
-
+    ros::Subscriber rc_input_sub;
+    double rc_dead_zone_;
 
     ros::Timer cmdloop_timer_;
     ros::Timer lidar_timer_;
+    ros::Timer waypoint_iter_timer_; 
+    double waypoint_time_in_sec, waypoint_time_in_sec_prev, target_duration_time_in_sec;    
+    std::deque<ros::Duration> command_waiting_times_;
     
     ros::Publisher rpyt_pub;
     ros::Publisher position_target_pub;
     ros::Publisher local_pos_pub;
     ros::Publisher mpc_cmd_pub;
+    ros::Publisher rc_input_pub;
+    ros::Publisher manual_trj_pub;
     
+    mavros_msgs::RCIn rc_iunput;    
+    bool vehicle_arming;
+    bool manual_trj_switch_;
+    double target_x,target_y,target_z;
     
     mav_msgs::RollPitchYawrateThrust mpc_cmd;
     bool mpc_cmd_enable;
@@ -101,6 +116,8 @@ private:
     void cmdloopCallback(const ros::TimerEvent &event);    
     void multiDOFJointCallback(const trajectory_msgs::MultiDOFJointTrajectoryConstPtr &msg);
     void mpcCommandCallback(const mav_msgs::RollPitchYawrateThrustConstPtr &msg);
+    void RCinCallback(const mavros_msgs::RCIn::ConstPtr &msg);
+    void sendManualTrajectory();
 
 
     // sensors callback

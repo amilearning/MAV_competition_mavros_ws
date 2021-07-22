@@ -1,1 +1,1 @@
-/home/hojin/drone_ws2/mavros_ws/devel/.private/catkin_tools_prebuild/_setup_util.py
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/catkin_tools_prebuild/_setup_util.py

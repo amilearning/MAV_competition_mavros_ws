@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include;/usr/include/eigen3".split(
 PROJECT_CATKIN_DEPENDS = "message_runtime;geometry_msgs;sensor_msgs;std_msgs;mav_msgs;trajectory_msgs".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "mav_planning_msgs"
-PROJECT_SPACE_DIR = "/home/hojin/drone_ws2/mavros_ws/install"
+PROJECT_SPACE_DIR = "/home/slam01/dronw_ws/MAV_competition_mavros_ws/install"
 PROJECT_VERSION = "3.3.3"

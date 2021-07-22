@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hojin/drone_ws2/mavros_ws/src/mavros/libmavconn
+CMAKE_SOURCE_DIR = /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/libmavconn
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hojin/drone_ws2/mavros_ws/build/libmavconn
+CMAKE_BINARY_DIR = /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/libmavconn
 
 # Utility rule file for run_tests_libmavconn_gtest.
 
@@ -67,6 +67,6 @@ CMakeFiles/run_tests_libmavconn_gtest.dir/clean:
 .PHONY : CMakeFiles/run_tests_libmavconn_gtest.dir/clean
 
 CMakeFiles/run_tests_libmavconn_gtest.dir/depend:
-	cd /home/hojin/drone_ws2/mavros_ws/build/libmavconn && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hojin/drone_ws2/mavros_ws/src/mavros/libmavconn /home/hojin/drone_ws2/mavros_ws/src/mavros/libmavconn /home/hojin/drone_ws2/mavros_ws/build/libmavconn /home/hojin/drone_ws2/mavros_ws/build/libmavconn /home/hojin/drone_ws2/mavros_ws/build/libmavconn/CMakeFiles/run_tests_libmavconn_gtest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/libmavconn && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/libmavconn /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/libmavconn /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/libmavconn /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/libmavconn /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/libmavconn/CMakeFiles/run_tests_libmavconn_gtest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run_tests_libmavconn_gtest.dir/depend
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/hojin/drone_ws2/mavros_ws/src/mavros/mavros
+# Install script for directory: /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/mavros
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/hojin/drone_ws2/mavros_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/slam01/dronw_ws/MAV_competition_mavros_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,142 +49,142 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/hojin/drone_ws2/mavros_ws/install/_setup_util.py")
+   "/home/slam01/dronw_ws/MAV_competition_mavros_ws/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/hojin/drone_ws2/mavros_ws/install" TYPE PROGRAM FILES "/home/hojin/drone_ws2/mavros_ws/build/mavros/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/slam01/dronw_ws/MAV_competition_mavros_ws/install" TYPE PROGRAM FILES "/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/hojin/drone_ws2/mavros_ws/install/env.sh")
+   "/home/slam01/dronw_ws/MAV_competition_mavros_ws/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/hojin/drone_ws2/mavros_ws/install" TYPE PROGRAM FILES "/home/hojin/drone_ws2/mavros_ws/build/mavros/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/slam01/dronw_ws/MAV_competition_mavros_ws/install" TYPE PROGRAM FILES "/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/hojin/drone_ws2/mavros_ws/install/setup.bash;/home/hojin/drone_ws2/mavros_ws/install/local_setup.bash")
+   "/home/slam01/dronw_ws/MAV_competition_mavros_ws/install/setup.bash;/home/slam01/dronw_ws/MAV_competition_mavros_ws/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/hojin/drone_ws2/mavros_ws/install" TYPE FILE FILES
-    "/home/hojin/drone_ws2/mavros_ws/build/mavros/catkin_generated/installspace/setup.bash"
-    "/home/hojin/drone_ws2/mavros_ws/build/mavros/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/slam01/dronw_ws/MAV_competition_mavros_ws/install" TYPE FILE FILES
+    "/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros/catkin_generated/installspace/setup.bash"
+    "/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/hojin/drone_ws2/mavros_ws/install/setup.sh;/home/hojin/drone_ws2/mavros_ws/install/local_setup.sh")
+   "/home/slam01/dronw_ws/MAV_competition_mavros_ws/install/setup.sh;/home/slam01/dronw_ws/MAV_competition_mavros_ws/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/hojin/drone_ws2/mavros_ws/install" TYPE FILE FILES
-    "/home/hojin/drone_ws2/mavros_ws/build/mavros/catkin_generated/installspace/setup.sh"
-    "/home/hojin/drone_ws2/mavros_ws/build/mavros/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/slam01/dronw_ws/MAV_competition_mavros_ws/install" TYPE FILE FILES
+    "/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros/catkin_generated/installspace/setup.sh"
+    "/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/hojin/drone_ws2/mavros_ws/install/setup.zsh;/home/hojin/drone_ws2/mavros_ws/install/local_setup.zsh")
+   "/home/slam01/dronw_ws/MAV_competition_mavros_ws/install/setup.zsh;/home/slam01/dronw_ws/MAV_competition_mavros_ws/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/hojin/drone_ws2/mavros_ws/install" TYPE FILE FILES
-    "/home/hojin/drone_ws2/mavros_ws/build/mavros/catkin_generated/installspace/setup.zsh"
-    "/home/hojin/drone_ws2/mavros_ws/build/mavros/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/slam01/dronw_ws/MAV_competition_mavros_ws/install" TYPE FILE FILES
+    "/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros/catkin_generated/installspace/setup.zsh"
+    "/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/hojin/drone_ws2/mavros_ws/install/.rosinstall")
+   "/home/slam01/dronw_ws/MAV_competition_mavros_ws/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/hojin/drone_ws2/mavros_ws/install" TYPE FILE FILES "/home/hojin/drone_ws2/mavros_ws/build/mavros/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/slam01/dronw_ws/MAV_competition_mavros_ws/install" TYPE FILE FILES "/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros/catkin_generated/installspace/.rosinstall")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/hojin/drone_ws2/mavros_ws/build/mavros/catkin_generated/safe_execute_install.cmake")
+  include("/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros/catkin_generated/safe_execute_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hojin/drone_ws2/mavros_ws/build/mavros/catkin_generated/installspace/mavros.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros/catkin_generated/installspace/mavros.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mavros/cmake" TYPE FILE FILES
-    "/home/hojin/drone_ws2/mavros_ws/build/mavros/catkin_generated/installspace/mavrosConfig.cmake"
-    "/home/hojin/drone_ws2/mavros_ws/build/mavros/catkin_generated/installspace/mavrosConfig-version.cmake"
+    "/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros/catkin_generated/installspace/mavrosConfig.cmake"
+    "/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros/catkin_generated/installspace/mavrosConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mavros" TYPE FILE FILES "/home/hojin/drone_ws2/mavros_ws/src/mavros/mavros/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mavros" TYPE FILE FILES "/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/mavros/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mavros" TYPE PROGRAM FILES "/home/hojin/drone_ws2/mavros_ws/build/mavros/catkin_generated/installspace/checkid")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mavros" TYPE PROGRAM FILES "/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros/catkin_generated/installspace/checkid")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mavros" TYPE PROGRAM FILES "/home/hojin/drone_ws2/mavros_ws/build/mavros/catkin_generated/installspace/event_launcher")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mavros" TYPE PROGRAM FILES "/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros/catkin_generated/installspace/event_launcher")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mavros" TYPE PROGRAM FILES "/home/hojin/drone_ws2/mavros_ws/build/mavros/catkin_generated/installspace/install_geographiclib_datasets.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mavros" TYPE PROGRAM FILES "/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros/catkin_generated/installspace/install_geographiclib_datasets.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mavros" TYPE PROGRAM FILES "/home/hojin/drone_ws2/mavros_ws/build/mavros/catkin_generated/installspace/mavcmd")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mavros" TYPE PROGRAM FILES "/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros/catkin_generated/installspace/mavcmd")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mavros" TYPE PROGRAM FILES "/home/hojin/drone_ws2/mavros_ws/build/mavros/catkin_generated/installspace/mavftp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mavros" TYPE PROGRAM FILES "/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros/catkin_generated/installspace/mavftp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mavros" TYPE PROGRAM FILES "/home/hojin/drone_ws2/mavros_ws/build/mavros/catkin_generated/installspace/mavparam")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mavros" TYPE PROGRAM FILES "/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros/catkin_generated/installspace/mavparam")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mavros" TYPE PROGRAM FILES "/home/hojin/drone_ws2/mavros_ws/build/mavros/catkin_generated/installspace/mavsafety")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mavros" TYPE PROGRAM FILES "/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros/catkin_generated/installspace/mavsafety")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mavros" TYPE PROGRAM FILES "/home/hojin/drone_ws2/mavros_ws/build/mavros/catkin_generated/installspace/mavsetp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mavros" TYPE PROGRAM FILES "/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros/catkin_generated/installspace/mavsetp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mavros" TYPE PROGRAM FILES "/home/hojin/drone_ws2/mavros_ws/build/mavros/catkin_generated/installspace/mavsys")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mavros" TYPE PROGRAM FILES "/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros/catkin_generated/installspace/mavsys")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mavros" TYPE PROGRAM FILES "/home/hojin/drone_ws2/mavros_ws/build/mavros/catkin_generated/installspace/mavwp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mavros" TYPE PROGRAM FILES "/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros/catkin_generated/installspace/mavwp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -194,12 +194,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mavros/gcs_bridge"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mavros" TYPE EXECUTABLE FILES "/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros/lib/mavros/gcs_bridge")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mavros" TYPE EXECUTABLE FILES "/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros/lib/mavros/gcs_bridge")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mavros/gcs_bridge" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mavros/gcs_bridge")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mavros/gcs_bridge"
-         OLD_RPATH "/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros/lib:/opt/ros/melodic/lib:/home/hojin/drone_ws2/mavros_ws/devel/.private/libmavconn/lib:"
+         OLD_RPATH "/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros/lib:/opt/ros/melodic/lib:/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/libmavconn/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mavros/gcs_bridge")
@@ -214,12 +214,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmavros.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros/lib/libmavros.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros/lib/libmavros.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmavros.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmavros.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmavros.so"
-         OLD_RPATH "/opt/ros/melodic/lib:/home/hojin/drone_ws2/mavros_ws/devel/.private/libmavconn/lib:"
+         OLD_RPATH "/opt/ros/melodic/lib:/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/libmavconn/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmavros.so")
@@ -234,12 +234,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mavros/mavros_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mavros" TYPE EXECUTABLE FILES "/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros/lib/mavros/mavros_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mavros" TYPE EXECUTABLE FILES "/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros/lib/mavros/mavros_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mavros/mavros_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mavros/mavros_node")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mavros/mavros_node"
-         OLD_RPATH "/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros/lib:/opt/ros/melodic/lib:/home/hojin/drone_ws2/mavros_ws/devel/.private/libmavconn/lib:"
+         OLD_RPATH "/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros/lib:/opt/ros/melodic/lib:/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/libmavconn/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mavros/mavros_node")
@@ -254,12 +254,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmavros_plugins.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros/lib/libmavros_plugins.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros/lib/libmavros_plugins.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmavros_plugins.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmavros_plugins.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmavros_plugins.so"
-         OLD_RPATH "/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros/lib:/opt/ros/melodic/lib:/home/hojin/drone_ws2/mavros_ws/devel/.private/libmavconn/lib:"
+         OLD_RPATH "/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros/lib:/opt/ros/melodic/lib:/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/libmavconn/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmavros_plugins.so")
@@ -268,20 +268,20 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/mavros" TYPE DIRECTORY FILES "/home/hojin/drone_ws2/mavros_ws/src/mavros/mavros/include/mavros/" FILES_MATCHING REGEX "/[^/]*\\.h$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/mavros" TYPE DIRECTORY FILES "/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/mavros/include/mavros/" FILES_MATCHING REGEX "/[^/]*\\.h$")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mavros" TYPE FILE FILES "/home/hojin/drone_ws2/mavros_ws/src/mavros/mavros/mavros_plugins.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mavros" TYPE FILE FILES "/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/mavros/mavros_plugins.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mavros/launch" TYPE DIRECTORY FILES "/home/hojin/drone_ws2/mavros_ws/src/mavros/mavros/launch/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mavros/launch" TYPE DIRECTORY FILES "/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/mavros/launch/")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/hojin/drone_ws2/mavros_ws/build/mavros/gtest/cmake_install.cmake")
+  include("/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros/gtest/cmake_install.cmake")
 
 endif()
 
@@ -293,5 +293,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/hojin/drone_ws2/mavros_ws/build/mavros/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,1 +1,1 @@
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_msgs/share/roseus/ros/mavros_msgs/msg/OverrideRCIn.l
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_msgs/share/roseus/ros/mavros_msgs/msg/OverrideRCIn.l

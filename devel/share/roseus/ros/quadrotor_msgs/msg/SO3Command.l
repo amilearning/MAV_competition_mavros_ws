@@ -1,1 +1,1 @@
-/home/hojin/drone_ws2/mavros_ws/devel/.private/quadrotor_msgs/share/roseus/ros/quadrotor_msgs/msg/SO3Command.l
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/quadrotor_msgs/share/roseus/ros/quadrotor_msgs/msg/SO3Command.l

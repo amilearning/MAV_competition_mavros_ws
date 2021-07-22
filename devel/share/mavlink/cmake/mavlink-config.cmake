@@ -21,7 +21,7 @@ set(mavlink2_DIALECTS ASLUAV;all;ardupilotmega;autoquad;common;icarous;matrixpil
 foreach(lib )
   set(onelib "${lib}-NOTFOUND")
   find_library(onelib ${lib}
-      PATHS "/home/hojin/drone_ws2/mavros_ws/devel/lib"
+      PATHS "/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/lib"
     NO_DEFAULT_PATH
     )
   if(NOT onelib)

@@ -1,1 +1,1 @@
-/home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/include/offboard_ctrl/dyn_paramsConfig.h
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/offboard_ctrl/include/offboard_ctrl/dyn_paramsConfig.h

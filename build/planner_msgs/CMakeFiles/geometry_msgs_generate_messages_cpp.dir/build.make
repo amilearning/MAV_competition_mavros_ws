@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hojin/drone_ws2/mavros_ws/src/mavros/planner_msgs
+CMAKE_SOURCE_DIR = /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/planner_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hojin/drone_ws2/mavros_ws/build/planner_msgs
+CMAKE_BINARY_DIR = /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/planner_msgs
 
 # Utility rule file for geometry_msgs_generate_messages_cpp.
 
@@ -67,6 +67,6 @@ CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean:
 .PHONY : CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
 
 CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend:
-	cd /home/hojin/drone_ws2/mavros_ws/build/planner_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hojin/drone_ws2/mavros_ws/src/mavros/planner_msgs /home/hojin/drone_ws2/mavros_ws/src/mavros/planner_msgs /home/hojin/drone_ws2/mavros_ws/build/planner_msgs /home/hojin/drone_ws2/mavros_ws/build/planner_msgs /home/hojin/drone_ws2/mavros_ws/build/planner_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/planner_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/planner_msgs /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/planner_msgs /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/planner_msgs /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/planner_msgs /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/planner_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
 

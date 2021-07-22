@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/hojin/drone_ws2/mavros_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/slam01/dronw_ws/MAV_competition_mavros_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/hojin/drone_ws2/mavros_ws/build/mavros_extras/gtest/googlemock/cmake_install.cmake")
+  include("/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros_extras/gtest/googlemock/cmake_install.cmake")
 
 endif()
 

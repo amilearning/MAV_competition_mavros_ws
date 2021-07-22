@@ -1,0 +1,7 @@
+[01m[K/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:[m[K In member function ‘[01m[Kvoid OffboardFSM::RCinCallback(const ConstPtr&)[m[K’:
+[01m[K/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:135:19:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs::Joy_<std::allocator<void> >::_axes_type {aka class std::vector<float>}[m[K’ has no member named ‘[01m[Kpush[m[K’
+     joy_msgs.axes.[01;31m[Kpush[m[K(tmp1);
+                   [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/offboard_ctrl.dir/src/offboard_ctrl.cpp.o] Error 1
+make[1]: *** [CMakeFiles/offboard_ctrl.dir/all] Error 2
+make: *** [all] Error 2

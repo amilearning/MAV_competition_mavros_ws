@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras:$CMAKE_PREFIX_PATH"
-export PWD='/home/hojin/drone_ws2/mavros_ws/build/mavros_extras'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/hojin/drone_ws2/mavros_ws/devel/.private/mavros_extras/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/hojin/drone_ws2/mavros_ws/src/mavros/mavros_extras:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras:$CMAKE_PREFIX_PATH"
+export PWD='/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros_extras'
+export ROSLISP_PACKAGE_DIRECTORIES="/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mavros_extras/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/mavros_extras:$ROS_PACKAGE_PATH"

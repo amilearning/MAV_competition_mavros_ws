@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/hojin/drone_ws2/mavros_ws/src/mavros/quadrotor_msgs
-# Build directory: /home/hojin/drone_ws2/mavros_ws/build/quadrotor_msgs
+# Source directory: /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/quadrotor_msgs
+# Build directory: /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/quadrotor_msgs
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

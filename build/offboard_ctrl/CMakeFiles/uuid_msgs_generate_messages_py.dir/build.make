@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl
+CMAKE_SOURCE_DIR = /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hojin/drone_ws2/mavros_ws/build/offboard_ctrl
+CMAKE_BINARY_DIR = /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/offboard_ctrl
 
 # Utility rule file for uuid_msgs_generate_messages_py.
 
@@ -67,6 +67,6 @@ CMakeFiles/uuid_msgs_generate_messages_py.dir/clean:
 .PHONY : CMakeFiles/uuid_msgs_generate_messages_py.dir/clean
 
 CMakeFiles/uuid_msgs_generate_messages_py.dir/depend:
-	cd /home/hojin/drone_ws2/mavros_ws/build/offboard_ctrl && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl /home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl /home/hojin/drone_ws2/mavros_ws/build/offboard_ctrl /home/hojin/drone_ws2/mavros_ws/build/offboard_ctrl /home/hojin/drone_ws2/mavros_ws/build/offboard_ctrl/CMakeFiles/uuid_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/offboard_ctrl && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/offboard_ctrl /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/offboard_ctrl /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/offboard_ctrl/CMakeFiles/uuid_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uuid_msgs_generate_messages_py.dir/depend
 

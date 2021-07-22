@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/encode_msgs.dir/src/encode_msgs.cpp.o"
-  "/home/hojin/drone_ws2/mavros_ws/devel/.private/quadrotor_msgs/lib/libencode_msgs.pdb"
-  "/home/hojin/drone_ws2/mavros_ws/devel/.private/quadrotor_msgs/lib/libencode_msgs.so"
+  "/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/quadrotor_msgs/lib/libencode_msgs.pdb"
+  "/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/quadrotor_msgs/lib/libencode_msgs.so"
 )
 
 # Per-language clean rules from dependency scanning.

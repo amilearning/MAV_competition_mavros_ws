@@ -1,5 +1,5 @@
-prefix=/home/hojin/drone_ws2/mavros_ws/devel
-exec_prefix=/home/hojin/drone_ws2/mavros_ws/devel
+prefix=/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel
+exec_prefix=/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel
 includedir=${prefix}/include
 
 Name: mavlink

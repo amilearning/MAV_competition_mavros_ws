@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/hojin/drone_ws2/mavros_ws/build/libmavconn/catkin_generated/src/mavlink_helpers.cpp" "/home/hojin/drone_ws2/mavros_ws/build/libmavconn/CMakeFiles/mavconn.dir/catkin_generated/src/mavlink_helpers.cpp.o"
-  "/home/hojin/drone_ws2/mavros_ws/src/mavros/libmavconn/src/interface.cpp" "/home/hojin/drone_ws2/mavros_ws/build/libmavconn/CMakeFiles/mavconn.dir/src/interface.cpp.o"
-  "/home/hojin/drone_ws2/mavros_ws/src/mavros/libmavconn/src/serial.cpp" "/home/hojin/drone_ws2/mavros_ws/build/libmavconn/CMakeFiles/mavconn.dir/src/serial.cpp.o"
-  "/home/hojin/drone_ws2/mavros_ws/src/mavros/libmavconn/src/tcp.cpp" "/home/hojin/drone_ws2/mavros_ws/build/libmavconn/CMakeFiles/mavconn.dir/src/tcp.cpp.o"
-  "/home/hojin/drone_ws2/mavros_ws/src/mavros/libmavconn/src/udp.cpp" "/home/hojin/drone_ws2/mavros_ws/build/libmavconn/CMakeFiles/mavconn.dir/src/udp.cpp.o"
+  "/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/libmavconn/catkin_generated/src/mavlink_helpers.cpp" "/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/libmavconn/CMakeFiles/mavconn.dir/catkin_generated/src/mavlink_helpers.cpp.o"
+  "/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/libmavconn/src/interface.cpp" "/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/libmavconn/CMakeFiles/mavconn.dir/src/interface.cpp.o"
+  "/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/libmavconn/src/serial.cpp" "/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/libmavconn/CMakeFiles/mavconn.dir/src/serial.cpp.o"
+  "/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/libmavconn/src/tcp.cpp" "/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/libmavconn/CMakeFiles/mavconn.dir/src/tcp.cpp.o"
+  "/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/libmavconn/src/udp.cpp" "/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/libmavconn/CMakeFiles/mavconn.dir/src/udp.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -19,9 +19,9 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/hojin/drone_ws2/mavros_ws/src/mavros/libmavconn/include"
+  "/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/libmavconn/include"
   "catkin_generated/include"
-  "/home/hojin/drone_ws2/mavros_ws/devel/include"
+  "/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/include"
   )
 
 # Targets to which this target links.

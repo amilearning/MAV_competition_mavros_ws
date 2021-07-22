@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/mavconn-test.dir/test/test_mavconn.cpp.o"
-  "/home/hojin/drone_ws2/mavros_ws/devel/.private/libmavconn/lib/libmavconn/mavconn-test.pdb"
-  "/home/hojin/drone_ws2/mavros_ws/devel/.private/libmavconn/lib/libmavconn/mavconn-test"
+  "/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/libmavconn/lib/libmavconn/mavconn-test.pdb"
+  "/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/libmavconn/lib/libmavconn/mavconn-test"
 )
 
 # Per-language clean rules from dependency scanning.

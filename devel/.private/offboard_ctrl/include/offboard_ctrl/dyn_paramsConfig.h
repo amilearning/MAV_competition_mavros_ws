@@ -239,12 +239,24 @@ class DEFAULT
         if("d0"==(*_i)->name){d0 = boost::any_cast<double>(val);}
         if("k0"==(*_i)->name){k0 = boost::any_cast<double>(val);}
         if("thrust_scale"==(*_i)->name){thrust_scale = boost::any_cast<double>(val);}
+        if("rc_dead_zone"==(*_i)->name){rc_dead_zone = boost::any_cast<double>(val);}
+        if("arming"==(*_i)->name){arming = boost::any_cast<bool>(val);}
+        if("manual_trj_switch"==(*_i)->name){manual_trj_switch = boost::any_cast<bool>(val);}
+        if("target_x"==(*_i)->name){target_x = boost::any_cast<double>(val);}
+        if("target_y"==(*_i)->name){target_y = boost::any_cast<double>(val);}
+        if("target_z"==(*_i)->name){target_z = boost::any_cast<double>(val);}
       }
     }
 
     double d0;
 double k0;
 double thrust_scale;
+double rc_dead_zone;
+bool arming;
+bool manual_trj_switch;
+double target_x;
+double target_y;
+double target_z;
 
     bool state;
     std::string name;
@@ -260,6 +272,18 @@ double thrust_scale;
       double k0;
 //#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       double thrust_scale;
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      double rc_dead_zone;
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      bool arming;
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      bool manual_trj_switch;
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      double target_x;
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      double target_y;
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      double target_z;
 //#line 228 "/opt/ros/melodic/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template"
 
     bool __fromMessage__(dynamic_reconfigure::Config &msg)
@@ -423,11 +447,71 @@ dyn_paramsConfig::GroupDescription<dyn_paramsConfig::DEFAULT, dyn_paramsConfig> 
 //#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.thrust_scale = 1.0;
 //#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __default__.thrust_scale = 0.01;
+      __default__.thrust_scale = 0.001;
 //#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(dyn_paramsConfig::AbstractParamDescriptionConstPtr(new dyn_paramsConfig::ParamDescription<double>("thrust_scale", "double", 0, "thrust_scale value", "", &dyn_paramsConfig::thrust_scale)));
 //#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(dyn_paramsConfig::AbstractParamDescriptionConstPtr(new dyn_paramsConfig::ParamDescription<double>("thrust_scale", "double", 0, "thrust_scale value", "", &dyn_paramsConfig::thrust_scale)));
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __min__.rc_dead_zone = 0.0;
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __max__.rc_dead_zone = 1.0;
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __default__.rc_dead_zone = 0.01;
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      Default.abstract_parameters.push_back(dyn_paramsConfig::AbstractParamDescriptionConstPtr(new dyn_paramsConfig::ParamDescription<double>("rc_dead_zone", "double", 0, "dead zone for rc input", "", &dyn_paramsConfig::rc_dead_zone)));
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __param_descriptions__.push_back(dyn_paramsConfig::AbstractParamDescriptionConstPtr(new dyn_paramsConfig::ParamDescription<double>("rc_dead_zone", "double", 0, "dead zone for rc input", "", &dyn_paramsConfig::rc_dead_zone)));
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __min__.arming = 0;
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __max__.arming = 1;
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __default__.arming = 0;
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      Default.abstract_parameters.push_back(dyn_paramsConfig::AbstractParamDescriptionConstPtr(new dyn_paramsConfig::ParamDescription<bool>("arming", "bool", 0, "arm the vehicle", "", &dyn_paramsConfig::arming)));
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __param_descriptions__.push_back(dyn_paramsConfig::AbstractParamDescriptionConstPtr(new dyn_paramsConfig::ParamDescription<bool>("arming", "bool", 0, "arm the vehicle", "", &dyn_paramsConfig::arming)));
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __min__.manual_trj_switch = 0;
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __max__.manual_trj_switch = 1;
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __default__.manual_trj_switch = 0;
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      Default.abstract_parameters.push_back(dyn_paramsConfig::AbstractParamDescriptionConstPtr(new dyn_paramsConfig::ParamDescription<bool>("manual_trj_switch", "bool", 0, "switch to send manual trajectory", "", &dyn_paramsConfig::manual_trj_switch)));
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __param_descriptions__.push_back(dyn_paramsConfig::AbstractParamDescriptionConstPtr(new dyn_paramsConfig::ParamDescription<bool>("manual_trj_switch", "bool", 0, "switch to send manual trajectory", "", &dyn_paramsConfig::manual_trj_switch)));
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __min__.target_x = 0.0;
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __max__.target_x = 5.0;
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __default__.target_x = 0.0;
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      Default.abstract_parameters.push_back(dyn_paramsConfig::AbstractParamDescriptionConstPtr(new dyn_paramsConfig::ParamDescription<double>("target_x", "double", 0, "manual trj target x", "", &dyn_paramsConfig::target_x)));
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __param_descriptions__.push_back(dyn_paramsConfig::AbstractParamDescriptionConstPtr(new dyn_paramsConfig::ParamDescription<double>("target_x", "double", 0, "manual trj target x", "", &dyn_paramsConfig::target_x)));
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __min__.target_y = 0.0;
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __max__.target_y = 5.0;
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __default__.target_y = 0.0;
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      Default.abstract_parameters.push_back(dyn_paramsConfig::AbstractParamDescriptionConstPtr(new dyn_paramsConfig::ParamDescription<double>("target_y", "double", 0, "manual trj target y", "", &dyn_paramsConfig::target_y)));
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __param_descriptions__.push_back(dyn_paramsConfig::AbstractParamDescriptionConstPtr(new dyn_paramsConfig::ParamDescription<double>("target_y", "double", 0, "manual trj target y", "", &dyn_paramsConfig::target_y)));
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __min__.target_z = 0.0;
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __max__.target_z = 5.0;
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __default__.target_z = 0.0;
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      Default.abstract_parameters.push_back(dyn_paramsConfig::AbstractParamDescriptionConstPtr(new dyn_paramsConfig::ParamDescription<double>("target_z", "double", 0, "manual trj target z", "", &dyn_paramsConfig::target_z)));
+//#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
+      __param_descriptions__.push_back(dyn_paramsConfig::AbstractParamDescriptionConstPtr(new dyn_paramsConfig::ParamDescription<double>("target_z", "double", 0, "manual trj target z", "", &dyn_paramsConfig::target_z)));
 //#line 246 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.convertParams();
 //#line 246 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"

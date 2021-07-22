@@ -1,1 +1,1 @@
-/home/hojin/drone_ws2/mavros_ws/devel/.private/mav_msgs/share/mav_msgs/cmake/mav_msgs-msg-extras.cmake
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/mav_msgs/share/mav_msgs/cmake/mav_msgs-msg-extras.cmake

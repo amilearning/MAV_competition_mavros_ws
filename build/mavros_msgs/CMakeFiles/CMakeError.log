@@ -1,24 +1,25 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/hojin/drone_ws2/mavros_ws/build/mavros_msgs/CMakeFiles/CMakeTmp
+Change Dir: /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros_msgs/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_2c478/fast"
-/usr/bin/make -f CMakeFiles/cmTC_2c478.dir/build.make CMakeFiles/cmTC_2c478.dir/build
-make[1]: Entering directory '/home/hojin/drone_ws2/mavros_ws/build/mavros_msgs/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2c478.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_2c478.dir/CheckSymbolExists.c.o   -c /home/hojin/drone_ws2/mavros_ws/build/mavros_msgs/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_2c478
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c478.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_2c478.dir/CheckSymbolExists.c.o  -o cmTC_2c478 
-CMakeFiles/cmTC_2c478.dir/CheckSymbolExists.c.o: In function `main':
-CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+Run Build Command:"/usr/bin/make" "cmTC_cebf3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cebf3.dir/build.make CMakeFiles/cmTC_cebf3.dir/build
+make[1]: Entering directory '/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros_msgs/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cebf3.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_cebf3.dir/CheckSymbolExists.c.o   -c /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros_msgs/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_cebf3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cebf3.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_cebf3.dir/CheckSymbolExists.c.o  -o cmTC_cebf3 
+CMakeFiles/cmTC_cebf3.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x14): undefined reference to `pthread_create'
+CheckSymbolExists.c:(.text+0x18): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_2c478.dir/build.make:97: recipe for target 'cmTC_2c478' failed
-make[1]: *** [cmTC_2c478] Error 1
-make[1]: Leaving directory '/home/hojin/drone_ws2/mavros_ws/build/mavros_msgs/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_2c478/fast' failed
-make: *** [cmTC_2c478/fast] Error 2
+CMakeFiles/cmTC_cebf3.dir/build.make:97: recipe for target 'cmTC_cebf3' failed
+make[1]: *** [cmTC_cebf3] Error 1
+make[1]: Leaving directory '/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros_msgs/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_cebf3/fast' failed
+make: *** [cmTC_cebf3/fast] Error 2
 
-File /home/hojin/drone_ws2/mavros_ws/build/mavros_msgs/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros_msgs/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -34,22 +35,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/hojin/drone_ws2/mavros_ws/build/mavros_msgs/CMakeFiles/CMakeTmp
+Change Dir: /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros_msgs/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1c2cc/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1c2cc.dir/build.make CMakeFiles/cmTC_1c2cc.dir/build
-make[1]: Entering directory '/home/hojin/drone_ws2/mavros_ws/build/mavros_msgs/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1c2cc.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_1c2cc.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_1c2cc
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c2cc.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_1c2cc.dir/CheckFunctionExists.c.o  -o cmTC_1c2cc -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_ee77e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ee77e.dir/build.make CMakeFiles/cmTC_ee77e.dir/build
+make[1]: Entering directory '/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros_msgs/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ee77e.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_ee77e.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ee77e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee77e.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_ee77e.dir/CheckFunctionExists.c.o  -o cmTC_ee77e -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_1c2cc.dir/build.make:97: recipe for target 'cmTC_1c2cc' failed
-make[1]: *** [cmTC_1c2cc] Error 1
-make[1]: Leaving directory '/home/hojin/drone_ws2/mavros_ws/build/mavros_msgs/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_1c2cc/fast' failed
-make: *** [cmTC_1c2cc/fast] Error 2
+CMakeFiles/cmTC_ee77e.dir/build.make:97: recipe for target 'cmTC_ee77e' failed
+make[1]: *** [cmTC_ee77e] Error 1
+make[1]: Leaving directory '/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros_msgs/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ee77e/fast' failed
+make: *** [cmTC_ee77e/fast] Error 2
 
 

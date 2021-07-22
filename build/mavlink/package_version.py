@@ -1,6 +1,6 @@
 import re, sys
 from xml.etree import ElementTree as ET
-doc = ET.parse('/home/hojin/drone_ws2/mavros_ws/src/mavlink/package.xml')
+doc = ET.parse('/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavlink/package.xml')
 ver = doc.find('version').text
 if re.match('\d+\.\d+\.\d+', ver):
     sys.stdout.write(ver)

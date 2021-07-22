@@ -1,0 +1,11 @@
+[01m[K/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:[m[K In constructor ‘[01m[KOffboardFSM::OffboardFSM(const ros::NodeHandle&, const ros::NodeHandle&)[m[K’:
+[01m[K/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:75:12:[m[K [01;31m[Kerror: [m[K‘[01m[Karming[m[K’ was not declared in this scope
+         if([01;31m[Karming[m[K){
+            [01;31m[K^~~~~~[m[K
+[01m[K/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:75:12:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Krint[m[K’
+         if([01;36m[Karming[m[K){
+            [01;36m[K^~~~~~[m[K
+            [32m[Krint[m[K
+make[2]: *** [CMakeFiles/offboard_ctrl.dir/src/offboard_ctrl.cpp.o] Error 1
+make[1]: *** [CMakeFiles/offboard_ctrl.dir/all] Error 2
+make: *** [all] Error 2

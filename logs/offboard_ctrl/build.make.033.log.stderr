@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl/cfg/dyn_params.cfg", line 11, in <module>
+    gen.add("arming",bool_t, 0, "arm the vehicle", false)
+NameError: name 'false' is not defined
+make[2]: *** [/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/offboard_ctrl/include/offboard_ctrl/dyn_paramsConfig.h] Error 1
+make[1]: *** [CMakeFiles/offboard_ctrl_gencfg.dir/all] Error 2
+make: *** [all] Error 2

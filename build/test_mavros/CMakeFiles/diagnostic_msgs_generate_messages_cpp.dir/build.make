@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hojin/drone_ws2/mavros_ws/src/mavros/test_mavros
+CMAKE_SOURCE_DIR = /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/test_mavros
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hojin/drone_ws2/mavros_ws/build/test_mavros
+CMAKE_BINARY_DIR = /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/test_mavros
 
 # Utility rule file for diagnostic_msgs_generate_messages_cpp.
 
@@ -67,6 +67,6 @@ CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/clean:
 .PHONY : CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/clean
 
 CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/depend:
-	cd /home/hojin/drone_ws2/mavros_ws/build/test_mavros && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hojin/drone_ws2/mavros_ws/src/mavros/test_mavros /home/hojin/drone_ws2/mavros_ws/src/mavros/test_mavros /home/hojin/drone_ws2/mavros_ws/build/test_mavros /home/hojin/drone_ws2/mavros_ws/build/test_mavros /home/hojin/drone_ws2/mavros_ws/build/test_mavros/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/test_mavros && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/test_mavros /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/test_mavros /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/test_mavros /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/test_mavros /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/test_mavros/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/depend
 

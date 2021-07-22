@@ -1,1 +1,1 @@
-/home/hojin/drone_ws2/mavros_ws/devel/.private/planner_msgs/share/roseus/ros/planner_msgs/srv/pci_to_waypoint.l
+/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/planner_msgs/share/roseus/ros/planner_msgs/srv/pci_to_waypoint.l

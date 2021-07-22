@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hojin/drone_ws2/mavros_ws/src/mavlink
+CMAKE_SOURCE_DIR = /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavlink
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hojin/drone_ws2/mavros_ws/build/mavlink
+CMAKE_BINARY_DIR = /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavlink
 
 # Utility rule file for autoquad.xml-v2.0.
 
@@ -56,11 +56,11 @@ include CMakeFiles/autoquad.xml-v2.0.dir/progress.make
 CMakeFiles/autoquad.xml-v2.0: autoquad-v2.0-cxx-stamp
 
 
-autoquad-v2.0-cxx-stamp: /home/hojin/drone_ws2/mavros_ws/src/mavlink/message_definitions/v1.0/autoquad.xml
-autoquad-v2.0-cxx-stamp: /home/hojin/drone_ws2/mavros_ws/src/mavlink/message_definitions/v1.0/common.xml
-autoquad-v2.0-cxx-stamp: /home/hojin/drone_ws2/mavros_ws/src/mavlink/pymavlink/tools/mavgen.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hojin/drone_ws2/mavros_ws/build/mavlink/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating autoquad-v2.0-cxx-stamp"
-	/usr/bin/env PYTHONPATH="/home/hojin/drone_ws2/mavros_ws/src/mavlink:/home/hojin/catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages" /usr/bin/python2 /home/hojin/drone_ws2/mavros_ws/src/mavlink/pymavlink/tools/mavgen.py --lang=C++11 --wire-protocol=2.0 --output=include/v2.0 /home/hojin/drone_ws2/mavros_ws/src/mavlink/message_definitions/v1.0/autoquad.xml
+autoquad-v2.0-cxx-stamp: /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavlink/message_definitions/v1.0/autoquad.xml
+autoquad-v2.0-cxx-stamp: /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavlink/message_definitions/v1.0/common.xml
+autoquad-v2.0-cxx-stamp: /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavlink/pymavlink/tools/mavgen.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavlink/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating autoquad-v2.0-cxx-stamp"
+	/usr/bin/env PYTHONPATH="/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavlink:/home/slam01/catkin_ws_viconbridge/devel/lib/python2.7/dist-packages:/home/slam01/catkin_ws_ublox/devel/lib/python2.7/dist-packages:/home/slam01/catkin_ws_mocap_optitrack/devel/lib/python2.7/dist-packages:/home/slam01/catkin_ws_aruco_5x5/devel/lib/python2.7/dist-packages:/home/slam01/catkin_ws_aruco_7x7/devel/lib/python2.7/dist-packages:/home/slam01/catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages:/usr/local/lib" /usr/bin/python2 /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavlink/pymavlink/tools/mavgen.py --lang=C++11 --wire-protocol=2.0 --output=include/v2.0 /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavlink/message_definitions/v1.0/autoquad.xml
 	touch autoquad-v2.0-cxx-stamp
 
 autoquad.xml-v2.0: CMakeFiles/autoquad.xml-v2.0
@@ -79,6 +79,6 @@ CMakeFiles/autoquad.xml-v2.0.dir/clean:
 .PHONY : CMakeFiles/autoquad.xml-v2.0.dir/clean
 
 CMakeFiles/autoquad.xml-v2.0.dir/depend:
-	cd /home/hojin/drone_ws2/mavros_ws/build/mavlink && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hojin/drone_ws2/mavros_ws/src/mavlink /home/hojin/drone_ws2/mavros_ws/src/mavlink /home/hojin/drone_ws2/mavros_ws/build/mavlink /home/hojin/drone_ws2/mavros_ws/build/mavlink /home/hojin/drone_ws2/mavros_ws/build/mavlink/CMakeFiles/autoquad.xml-v2.0.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavlink && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavlink /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavlink /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavlink /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavlink /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavlink/CMakeFiles/autoquad.xml-v2.0.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/autoquad.xml-v2.0.dir/depend
 

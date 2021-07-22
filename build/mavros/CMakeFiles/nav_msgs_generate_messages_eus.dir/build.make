@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hojin/drone_ws2/mavros_ws/src/mavros/mavros
+CMAKE_SOURCE_DIR = /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/mavros
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hojin/drone_ws2/mavros_ws/build/mavros
+CMAKE_BINARY_DIR = /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros
 
 # Utility rule file for nav_msgs_generate_messages_eus.
 
@@ -67,6 +67,6 @@ CMakeFiles/nav_msgs_generate_messages_eus.dir/clean:
 .PHONY : CMakeFiles/nav_msgs_generate_messages_eus.dir/clean
 
 CMakeFiles/nav_msgs_generate_messages_eus.dir/depend:
-	cd /home/hojin/drone_ws2/mavros_ws/build/mavros && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hojin/drone_ws2/mavros_ws/src/mavros/mavros /home/hojin/drone_ws2/mavros_ws/src/mavros/mavros /home/hojin/drone_ws2/mavros_ws/build/mavros /home/hojin/drone_ws2/mavros_ws/build/mavros /home/hojin/drone_ws2/mavros_ws/build/mavros/CMakeFiles/nav_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/mavros /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/mavros /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/mavros/CMakeFiles/nav_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/nav_msgs_generate_messages_eus.dir/depend
 

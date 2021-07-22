@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "message_runtime".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lencode_msgs;-ldecode_msgs".split(';') if "-lencode_msgs;-ldecode_msgs" != "" else []
 PROJECT_NAME = "quadrotor_msgs"
-PROJECT_SPACE_DIR = "/home/hojin/drone_ws2/mavros_ws/install"
+PROJECT_SPACE_DIR = "/home/slam01/dronw_ws/MAV_competition_mavros_ws/install"
 PROJECT_VERSION = "0.0.0"

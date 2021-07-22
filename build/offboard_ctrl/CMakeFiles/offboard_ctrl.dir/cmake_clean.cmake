@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/offboard_ctrl.dir/src/offboard_ctrl.cpp.o"
-  "/home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/lib/offboard_ctrl/offboard_ctrl.pdb"
-  "/home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/lib/offboard_ctrl/offboard_ctrl"
+  "/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/offboard_ctrl/lib/offboard_ctrl/offboard_ctrl.pdb"
+  "/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/offboard_ctrl/lib/offboard_ctrl/offboard_ctrl"
 )
 
 # Per-language clean rules from dependency scanning.

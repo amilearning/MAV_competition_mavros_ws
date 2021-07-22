@@ -1,0 +1,36 @@
+[01m[K/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:[m[K In member function ‘[01m[Kvoid OffboardFSM::RCinCallback(const ConstPtr&)[m[K’:
+[01m[K/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:120:26:[m[K [01;31m[Kerror: [m[K‘[01m[KMAX_CHANCNT[m[K’ was not declared in this scope
+     std::array<uint16_t, [01;31m[KMAX_CHANCNT[m[K> channels;
+                          [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:120:26:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KMAX_CANON[m[K’
+     std::array<uint16_t, [01;36m[KMAX_CHANCNT[m[K> channels;
+                          [01;36m[K^~~~~~~~~~~[m[K
+                          [32m[KMAX_CANON[m[K
+[01m[K/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:120:37:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+     std::array<uint16_t, MAX_CHANCNT[01;31m[K>[m[K channels;
+                                     [01;31m[K^[m[K
+[01m[K/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:121:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kreq[m[K’ was not declared in this scope
+     auto n = std::min([01;31m[Kreq[m[K->channels.size(), channels.size());
+                       [01;31m[K^~~[m[K
+[01m[K/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:121:23:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kread[m[K’
+     auto n = std::min([01;36m[Kreq[m[K->channels.size(), channels.size());
+                       [01;36m[K^~~[m[K
+                       [32m[Kread[m[K
+[01m[K/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:121:54:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize[m[K’ in ‘[01m[Kchannels[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+     auto n = std::min(req->channels.size(), channels.[01;31m[Ksize[m[K());
+                                                      [01;31m[K^~~~[m[K
+[01m[K/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:122:74:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kbegin[m[K’ in ‘[01m[Kchannels[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+     std::copy(req->channels.begin(), req->channels.begin() + n, channels.[01;31m[Kbegin[m[K());
+                                                                          [01;31m[K^~~~~[m[K
+[01m[K/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:123:24:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kbegin[m[K’ in ‘[01m[Kchannels[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+     std::fill(channels.[01;31m[Kbegin[m[K() + n, channels.end(), UINT16_MAX);
+                        [01;31m[K^~~~~[m[K
+[01m[K/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:123:46:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kend[m[K’ in ‘[01m[Kchannels[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+     std::fill(channels.begin() + n, channels.[01;31m[Kend[m[K(), UINT16_MAX);
+                                              [01;31m[K^~~[m[K
+[01m[K/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:130:38:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[int][m[K’ for array subscript
+         joy_msgs.axes[i] = channels[i[01;31m[K][m[K;
+                                      [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/offboard_ctrl.dir/src/offboard_ctrl.cpp.o] Error 1
+make[1]: *** [CMakeFiles/offboard_ctrl.dir/all] Error 2
+make: *** [all] Error 2

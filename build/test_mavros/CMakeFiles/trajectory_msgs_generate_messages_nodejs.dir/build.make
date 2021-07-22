@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hojin/drone_ws2/mavros_ws/src/mavros/test_mavros
+CMAKE_SOURCE_DIR = /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/test_mavros
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hojin/drone_ws2/mavros_ws/build/test_mavros
+CMAKE_BINARY_DIR = /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/test_mavros
 
 # Utility rule file for trajectory_msgs_generate_messages_nodejs.
 
@@ -67,6 +67,6 @@ CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/clean:
 .PHONY : CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/clean
 
 CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/depend:
-	cd /home/hojin/drone_ws2/mavros_ws/build/test_mavros && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hojin/drone_ws2/mavros_ws/src/mavros/test_mavros /home/hojin/drone_ws2/mavros_ws/src/mavros/test_mavros /home/hojin/drone_ws2/mavros_ws/build/test_mavros /home/hojin/drone_ws2/mavros_ws/build/test_mavros /home/hojin/drone_ws2/mavros_ws/build/test_mavros/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/test_mavros && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/test_mavros /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/test_mavros /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/test_mavros /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/test_mavros /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/test_mavros/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/depend
 

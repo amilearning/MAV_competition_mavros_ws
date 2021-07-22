@@ -1,8 +1,8 @@
-prefix=/home/hojin/drone_ws2/mavros_ws/devel/.private/planner_msgs
+prefix=/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/planner_msgs
 
 Name: planner_msgs
 Description: Description of planner_msgs
 Version: 1.0.0
-Cflags: -I/home/hojin/drone_ws2/mavros_ws/devel/.private/planner_msgs/include
+Cflags: -I/home/slam01/dronw_ws/MAV_competition_mavros_ws/devel/.private/planner_msgs/include
 Libs: -L${prefix}/lib 
 Requires: message_runtime geometry_msgs

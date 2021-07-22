@@ -1,0 +1,11 @@
+[01m[K/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:[m[K In member function ‘[01m[Kvoid OffboardFSM::RCinCallback(const ConstPtr&)[m[K’:
+[01m[K/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:121:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kreq[m[K’ was not declared in this scope
+     auto n = std::min([01;31m[Kreq[m[K->channels.size(), channels.size());
+                       [01;31m[K^~~[m[K
+[01m[K/home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:121:23:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kread[m[K’
+     auto n = std::min([01;36m[Kreq[m[K->channels.size(), channels.size());
+                       [01;36m[K^~~[m[K
+                       [32m[Kread[m[K
+make[2]: *** [CMakeFiles/offboard_ctrl.dir/src/offboard_ctrl.cpp.o] Error 1
+make[1]: *** [CMakeFiles/offboard_ctrl.dir/all] Error 2
+make: *** [all] Error 2

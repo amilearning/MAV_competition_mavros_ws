@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hojin/drone_ws2/mavros_ws/src/mavros/planner_msgs
+CMAKE_SOURCE_DIR = /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/planner_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hojin/drone_ws2/mavros_ws/build/planner_msgs
+CMAKE_BINARY_DIR = /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/planner_msgs
 
 # Utility rule file for _planner_msgs_generate_messages_check_deps_TriggerMode.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/hojin/drone_ws2/mavros_ws/build/planner_msgs
 include CMakeFiles/_planner_msgs_generate_messages_check_deps_TriggerMode.dir/progress.make
 
 CMakeFiles/_planner_msgs_generate_messages_check_deps_TriggerMode:
-	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py planner_msgs /home/hojin/drone_ws2/mavros_ws/src/mavros/planner_msgs/msg/TriggerMode.msg 
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py planner_msgs /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/planner_msgs/msg/TriggerMode.msg 
 
 _planner_msgs_generate_messages_check_deps_TriggerMode: CMakeFiles/_planner_msgs_generate_messages_check_deps_TriggerMode
 _planner_msgs_generate_messages_check_deps_TriggerMode: CMakeFiles/_planner_msgs_generate_messages_check_deps_TriggerMode.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/_planner_msgs_generate_messages_check_deps_TriggerMode.dir/clean:
 .PHONY : CMakeFiles/_planner_msgs_generate_messages_check_deps_TriggerMode.dir/clean
 
 CMakeFiles/_planner_msgs_generate_messages_check_deps_TriggerMode.dir/depend:
-	cd /home/hojin/drone_ws2/mavros_ws/build/planner_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hojin/drone_ws2/mavros_ws/src/mavros/planner_msgs /home/hojin/drone_ws2/mavros_ws/src/mavros/planner_msgs /home/hojin/drone_ws2/mavros_ws/build/planner_msgs /home/hojin/drone_ws2/mavros_ws/build/planner_msgs /home/hojin/drone_ws2/mavros_ws/build/planner_msgs/CMakeFiles/_planner_msgs_generate_messages_check_deps_TriggerMode.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/planner_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/planner_msgs /home/slam01/dronw_ws/MAV_competition_mavros_ws/src/mavros/planner_msgs /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/planner_msgs /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/planner_msgs /home/slam01/dronw_ws/MAV_competition_mavros_ws/build/planner_msgs/CMakeFiles/_planner_msgs_generate_messages_check_deps_TriggerMode.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/_planner_msgs_generate_messages_check_deps_TriggerMode.dir/depend
 
