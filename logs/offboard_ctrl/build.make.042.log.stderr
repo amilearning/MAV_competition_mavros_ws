@@ -1,0 +1,83 @@
+[01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:[m[K In member function ‘[01m[Kvoid OffboardFSM::waypointTimerCallback(const ros::TimerEvent&)[m[K’:
+[01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:308:49:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator<<[m[K’ (operand types are ‘[01m[Kconst char [26][m[K’ and ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<ros::Duration> >::value_type {aka ros::Duration}[m[K’)
+     ROS_STREAM_INFO([01;31m[K"command_waiting_times_ = " <<  (command_waiting_times_.front())[m[K;
+                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/node_handle.h:52:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/include/offboard_ctrl.h:1[m[K,
+                 from [01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:5[m[K:
+[01m[K/opt/ros/melodic/include/xmlrpcpp/XmlRpcValue.h:207:29:[m[K [01;36m[Knote: [m[Kcandidate: std::ostream& operator<<(std::ostream&, const XmlRpc::XmlRpcValue&)
+ XMLRPCPP_DECL std::ostream& [01;36m[Koperator[m[K<<(std::ostream& os, const XmlRpc::XmlRpcValue& v);
+                             [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/xmlrpcpp/XmlRpcValue.h:207:29:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [26][m[K’ to ‘[01m[Kstd::ostream& {aka std::basic_ostream<char>&}[m[K’
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:38:0[m[K,
+                 from [01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/include/offboard_ctrl.h:1[m[K,
+                 from [01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:5[m[K:
+[01m[K/opt/ros/melodic/include/ros/time.h:289:30:[m[K [01;36m[Knote: [m[Kcandidate: std::ostream& ros::operator<<(std::ostream&, const ros::SteadyTime&)
+   ROSTIME_DECL std::ostream &[01;36m[Koperator[m[K <<(std::ostream &os, const SteadyTime &rhs);
+                              [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/time.h:289:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [26][m[K’ to ‘[01m[Kstd::ostream& {aka std::basic_ostream<char>&}[m[K’
+[01m[K/opt/ros/melodic/include/ros/time.h:288:30:[m[K [01;36m[Knote: [m[Kcandidate: std::ostream& ros::operator<<(std::ostream&, const ros::WallTime&)
+   ROSTIME_DECL std::ostream &[01;36m[Koperator[m[K <<(std::ostream &os, const WallTime &rhs);
+                              [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/time.h:288:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [26][m[K’ to ‘[01m[Kstd::ostream& {aka std::basic_ostream<char>&}[m[K’
+[01m[K/opt/ros/melodic/include/ros/time.h:287:30:[m[K [01;36m[Knote: [m[Kcandidate: std::ostream& ros::operator<<(std::ostream&, const ros::Time&)
+   ROSTIME_DECL std::ostream &[01;36m[Koperator[m[K <<(std::ostream &os, const Time &rhs);
+                              [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/time.h:287:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [26][m[K’ to ‘[01m[Kstd::ostream& {aka std::basic_ostream<char>&}[m[K’
+In file included from [01m[K/opt/ros/melodic/include/ros/time.h:57:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/include/offboard_ctrl.h:1[m[K,
+                 from [01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:5[m[K:
+[01m[K/opt/ros/melodic/include/ros/duration.h:157:28:[m[K [01;36m[Knote: [m[Kcandidate: std::ostream& ros::operator<<(std::ostream&, const ros::WallDuration&)
+ ROSTIME_DECL std::ostream &[01;36m[Koperator[m[K <<(std::ostream &os, const WallDuration &rhs);
+                            [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/duration.h:157:28:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [26][m[K’ to ‘[01m[Kstd::ostream& {aka std::basic_ostream<char>&}[m[K’
+[01m[K/opt/ros/melodic/include/ros/duration.h:156:28:[m[K [01;36m[Knote: [m[Kcandidate: std::ostream& ros::operator<<(std::ostream&, const ros::Duration&)
+ ROSTIME_DECL std::ostream &[01;36m[Koperator[m[K <<(std::ostream &os, const Duration &rhs);
+                            [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/duration.h:156:28:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [26][m[K’ to ‘[01m[Kstd::ostream& {aka std::basic_ostream<char>&}[m[K’
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:40:0[m[K,
+                 from [01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/include/offboard_ctrl.h:1[m[K,
+                 from [01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:5[m[K:
+[01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:[m[K In member function ‘[01m[Kvoid OffboardFSM::cmdloopCallback(const ros::TimerEvent&)[m[K’:
+[01m[K/opt/ros/melodic/include/ros/console.h:348:176:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 8 has type ‘[01m[Kint[m[K’ [[01;35m[K-Wformat=[m[K]
+     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:351:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:387:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:572:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+ #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+ #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:335:9:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+         [01;36m[KR[m[KOS_INFO("waypoints iter = %f", waypoints_itr);
+         [01;36m[K^[m[K
+[01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:[m[K In member function ‘[01m[Kvoid OffboardFSM::multiDOFJointCallback(const MultiDOFJointTrajectoryConstPtr&)[m[K’:
+[01m[K/opt/ros/melodic/include/ros/console.h:348:176:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 8 has type ‘[01m[Kstd::vector<trajectory_msgs::MultiDOFJointTrajectoryPoint_<std::allocator<void> >, std::allocator<trajectory_msgs::MultiDOFJointTrajectoryPoint_<std::allocator<void> > > >::size_type {aka long unsigned int}[m[K’ [[01;35m[K-Wformat=[m[K]
+     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:351:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:387:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:572:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+ #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+ #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl/src/offboard_ctrl.cpp:383:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+     [01;36m[KR[m[KOS_INFO("trejactory size = %f", msg->points.size());
+     [01;36m[K^[m[K
+make[2]: *** [CMakeFiles/offboard_ctrl.dir/src/offboard_ctrl.cpp.o] Error 1
+make[1]: *** [CMakeFiles/offboard_ctrl.dir/all] Error 2
+make: *** [all] Error 2

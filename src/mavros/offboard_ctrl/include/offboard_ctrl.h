@@ -30,6 +30,8 @@
 #include <sensor_msgs/LaserScan.h>
 #include <std_srvs/Empty.h>
 #include <std_srvs/Trigger.h>
+#include <darknet_ros_msgs/BoundingBoxes.h>
+#include <quadrotor_msgs/PositionCommand.h>
 
 
 
@@ -55,7 +57,8 @@ private:
     ros::Subscriber state_sub;
     ros::Subscriber lidar_sub;
     ros::Subscriber mpcCommand_sub;
-
+    ros::Subscriber bbx_sub; 
+    ros::Subscriber pos_cmd_sub;
 
     ros::Timer cmdloop_timer_;
     ros::Timer waypoint_iter_timer_; 
@@ -70,7 +73,7 @@ private:
     ros::Publisher mpc_cmd_pub;
     ros::Publisher manual_trj_pub;
     
-    
+    quadrotor_msgs::PositionCommand pose_cmd;
     mav_msgs::RollPitchYawrateThrust mpc_cmd;
     bool mpc_cmd_enable;
     bool avoidance_enable;
@@ -99,6 +102,7 @@ private:
     dynamic_reconfigure::Server<offboard_ctrl::dyn_paramsConfig>::CallbackType f;
     
     
+    darknet_ros_msgs::BoundingBoxes detected_bbx;
 
     int waypoints_itr;
     bool send_waypoint;
@@ -113,12 +117,13 @@ private:
     void multiDOFJointCallback(const trajectory_msgs::MultiDOFJointTrajectoryConstPtr &msg);
     void mpcCommandCallback(const mav_msgs::RollPitchYawrateThrustConstPtr &msg);
     void sendManualTrajectory();
+    void poseCmdCallback(const quadrotor_msgs::PositionCommandConstPtr &msg);
 
 
     // sensors callback
     void lidarCallback(const sensor_msgs::LaserScanConstPtr &msg);
     void lidarTimeCallback(const ros::TimerEvent &event);
-    
+    void bbxCallback(const darknet_ros_msgs::BoundingBoxesConstPtr &msg);
 
 
     void odom_cb(const nav_msgs::OdometryConstPtr& msg);

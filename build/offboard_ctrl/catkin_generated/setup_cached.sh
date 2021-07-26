@@ -8,6 +8,9 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/hojin/drone_ws2/mavros_ws/build/offboard_ctrl'
+export PYTHONPATH="/home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/lib/python2.7/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/hojin/drone_ws2/mavros_ws/src/mavros/offboard_ctrl:$ROS_PACKAGE_PATH"

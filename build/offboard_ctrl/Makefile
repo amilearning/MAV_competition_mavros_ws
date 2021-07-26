@@ -168,6 +168,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named offboard_ctrl_gencfg
+
+# Build rule for target.
+offboard_ctrl_gencfg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 offboard_ctrl_gencfg
+.PHONY : offboard_ctrl_gencfg
+
+# fast build rule for target.
+offboard_ctrl_gencfg/fast:
+	$(MAKE) -f CMakeFiles/offboard_ctrl_gencfg.dir/build.make CMakeFiles/offboard_ctrl_gencfg.dir/build
+.PHONY : offboard_ctrl_gencfg/fast
+
+#=============================================================================
+# Target rules for targets named darknet_ros_msgs_generate_messages_nodejs
+
+# Build rule for target.
+darknet_ros_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 darknet_ros_msgs_generate_messages_nodejs
+.PHONY : darknet_ros_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+darknet_ros_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/darknet_ros_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/darknet_ros_msgs_generate_messages_nodejs.dir/build
+.PHONY : darknet_ros_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named darknet_ros_msgs_generate_messages_lisp
+
+# Build rule for target.
+darknet_ros_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 darknet_ros_msgs_generate_messages_lisp
+.PHONY : darknet_ros_msgs_generate_messages_lisp
+
+# fast build rule for target.
+darknet_ros_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/darknet_ros_msgs_generate_messages_lisp.dir/build.make CMakeFiles/darknet_ros_msgs_generate_messages_lisp.dir/build
+.PHONY : darknet_ros_msgs_generate_messages_lisp/fast
+
+#=============================================================================
 # Target rules for targets named offboard_ctrl
 
 # Build rule for target.
@@ -181,17 +220,30 @@ offboard_ctrl/fast:
 .PHONY : offboard_ctrl/fast
 
 #=============================================================================
-# Target rules for targets named offboard_ctrl_gencfg
+# Target rules for targets named darknet_ros_msgs_generate_messages_eus
 
 # Build rule for target.
-offboard_ctrl_gencfg: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 offboard_ctrl_gencfg
-.PHONY : offboard_ctrl_gencfg
+darknet_ros_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 darknet_ros_msgs_generate_messages_eus
+.PHONY : darknet_ros_msgs_generate_messages_eus
 
 # fast build rule for target.
-offboard_ctrl_gencfg/fast:
-	$(MAKE) -f CMakeFiles/offboard_ctrl_gencfg.dir/build.make CMakeFiles/offboard_ctrl_gencfg.dir/build
-.PHONY : offboard_ctrl_gencfg/fast
+darknet_ros_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/darknet_ros_msgs_generate_messages_eus.dir/build.make CMakeFiles/darknet_ros_msgs_generate_messages_eus.dir/build
+.PHONY : darknet_ros_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named darknet_ros_msgs_generate_messages_cpp
+
+# Build rule for target.
+darknet_ros_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 darknet_ros_msgs_generate_messages_cpp
+.PHONY : darknet_ros_msgs_generate_messages_cpp
+
+# fast build rule for target.
+darknet_ros_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/darknet_ros_msgs_generate_messages_cpp.dir/build.make CMakeFiles/darknet_ros_msgs_generate_messages_cpp.dir/build
+.PHONY : darknet_ros_msgs_generate_messages_cpp/fast
 
 #=============================================================================
 # Target rules for targets named planner_msgs_generate_messages_py
@@ -504,6 +556,19 @@ actionlib_generate_messages_cpp: cmake_check_build_system
 actionlib_generate_messages_cpp/fast:
 	$(MAKE) -f CMakeFiles/actionlib_generate_messages_cpp.dir/build.make CMakeFiles/actionlib_generate_messages_cpp.dir/build
 .PHONY : actionlib_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named darknet_ros_msgs_generate_messages_py
+
+# Build rule for target.
+darknet_ros_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 darknet_ros_msgs_generate_messages_py
+.PHONY : darknet_ros_msgs_generate_messages_py
+
+# fast build rule for target.
+darknet_ros_msgs_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/darknet_ros_msgs_generate_messages_py.dir/build.make CMakeFiles/darknet_ros_msgs_generate_messages_py.dir/build
+.PHONY : darknet_ros_msgs_generate_messages_py/fast
 
 #=============================================================================
 # Target rules for targets named nav_msgs_generate_messages_nodejs
@@ -1802,8 +1867,12 @@ help:
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... list_install_components"
-	@echo "... offboard_ctrl"
 	@echo "... offboard_ctrl_gencfg"
+	@echo "... darknet_ros_msgs_generate_messages_nodejs"
+	@echo "... darknet_ros_msgs_generate_messages_lisp"
+	@echo "... offboard_ctrl"
+	@echo "... darknet_ros_msgs_generate_messages_eus"
+	@echo "... darknet_ros_msgs_generate_messages_cpp"
 	@echo "... planner_msgs_generate_messages_py"
 	@echo "... planner_msgs_generate_messages_eus"
 	@echo "... planner_msgs_generate_messages_cpp"
@@ -1830,6 +1899,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... actionlib_generate_messages_cpp"
 	@echo "... test"
+	@echo "... darknet_ros_msgs_generate_messages_py"
 	@echo "... nav_msgs_generate_messages_nodejs"
 	@echo "... nav_msgs_generate_messages_lisp"
 	@echo "... visualization_msgs_generate_messages_cpp"

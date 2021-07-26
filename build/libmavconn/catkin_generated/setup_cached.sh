@@ -8,7 +8,8 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/hojin/drone_ws2/mavros_ws/devel/.private/libmavconn:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/hojin/drone_ws2/mavros_ws/devel/.private/libmavconn/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/hojin/drone_ws2/mavros_ws/devel/.private/libmavconn/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/hojin/drone_ws2/mavros_ws/build/libmavconn'
-export PYTHONPATH="/home/hojin/drone_ws2/mavros_ws/devel/lib/python2.7/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/hojin/drone_ws2/mavros_ws/devel/.private/libmavconn/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/hojin/drone_ws2/mavros_ws/src/mavros/libmavconn:$ROS_PACKAGE_PATH"

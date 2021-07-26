@@ -64,7 +64,9 @@
   <depend>mav_msgs</depend>
   <depend>mavros_extras</depend>
   <depend>eigen</depend>
-  <depend>eigen_conversions</depend>
+  <depend>eigen_conversions</depend>  
+  <depend>darknet_ros_msgs</depend>
+  <depend>quadrotor_msgs</depend>  
   <depend>control_toolbox</depend>
   <depend>sensor_msgs</depend>    
   <!-- <depend>planner_msgs</depend>   -->

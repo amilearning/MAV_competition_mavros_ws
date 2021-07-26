@@ -60,7 +60,7 @@ include/v1.0/common/common.h: /home/hojin/drone_ws2/mavros_ws/src/mavlink/messag
 include/v1.0/common/common.h: /home/hojin/drone_ws2/mavros_ws/src/mavlink/message_definitions/v1.0/common.xml
 include/v1.0/common/common.h: /home/hojin/drone_ws2/mavros_ws/src/mavlink/pymavlink/tools/mavgen.py
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hojin/drone_ws2/mavros_ws/build/mavlink/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating include/v1.0/common/common.h"
-	/usr/bin/env PYTHONPATH="/home/hojin/drone_ws2/mavros_ws/src/mavlink:/home/hojin/catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages" /usr/bin/python2 /home/hojin/drone_ws2/mavros_ws/src/mavlink/pymavlink/tools/mavgen.py --lang=C --wire-protocol=1.0 --output=include/v1.0 /home/hojin/drone_ws2/mavros_ws/src/mavlink/message_definitions/v1.0/common.xml
+	/usr/bin/env PYTHONPATH="/home/hojin/drone_ws2/mavros_ws/src/mavlink:/home/hojin/drone_ws2/mavros_ws/devel/lib/python2.7/dist-packages:/home/hojin/catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages" /usr/bin/python2 /home/hojin/drone_ws2/mavros_ws/src/mavlink/pymavlink/tools/mavgen.py --lang=C --wire-protocol=1.0 --output=include/v1.0 /home/hojin/drone_ws2/mavros_ws/src/mavlink/message_definitions/v1.0/common.xml
 
 common.xml-v1.0: CMakeFiles/common.xml-v1.0
 common.xml-v1.0: include/v1.0/common/common.h

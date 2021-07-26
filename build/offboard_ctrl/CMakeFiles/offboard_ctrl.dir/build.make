@@ -94,8 +94,6 @@ offboard_ctrl_EXTERNAL_OBJECTS =
 /home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/lib/offboard_ctrl/offboard_ctrl: /usr/lib/x86_64-linux-gnu/libtinyxml.so
 /home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/lib/offboard_ctrl/offboard_ctrl: /opt/ros/melodic/lib/librealtime_tools.so
 /home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/lib/offboard_ctrl/offboard_ctrl: /opt/ros/melodic/lib/libtf.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/lib/offboard_ctrl/offboard_ctrl: /home/hojin/drone_ws2/mavros_ws/devel/.private/quadrotor_msgs/lib/libencode_msgs.so
-/home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/lib/offboard_ctrl/offboard_ctrl: /home/hojin/drone_ws2/mavros_ws/devel/.private/quadrotor_msgs/lib/libdecode_msgs.so
 /home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/lib/offboard_ctrl/offboard_ctrl: /home/hojin/drone_ws2/mavros_ws/devel/.private/mavros/lib/libmavros.so
 /home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/lib/offboard_ctrl/offboard_ctrl: /usr/lib/x86_64-linux-gnu/libGeographic.so
 /home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/lib/offboard_ctrl/offboard_ctrl: /opt/ros/melodic/lib/libdiagnostic_updater.so
@@ -123,6 +121,8 @@ offboard_ctrl_EXTERNAL_OBJECTS =
 /home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/lib/offboard_ctrl/offboard_ctrl: /opt/ros/melodic/lib/libxmlrpcpp.so
 /home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/lib/offboard_ctrl/offboard_ctrl: /opt/ros/melodic/lib/libtf2.so
 /home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/lib/offboard_ctrl/offboard_ctrl: /opt/ros/melodic/lib/libdynamic_reconfigure_config_init_mutex.so
+/home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/lib/offboard_ctrl/offboard_ctrl: /home/hojin/drone_ws2/mavros_ws/devel/.private/quadrotor_msgs/lib/libencode_msgs.so
+/home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/lib/offboard_ctrl/offboard_ctrl: /home/hojin/drone_ws2/mavros_ws/devel/.private/quadrotor_msgs/lib/libdecode_msgs.so
 /home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/lib/offboard_ctrl/offboard_ctrl: /opt/ros/melodic/lib/libroscpp_serialization.so
 /home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/lib/offboard_ctrl/offboard_ctrl: /opt/ros/melodic/lib/librostime.so
 /home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/lib/offboard_ctrl/offboard_ctrl: /opt/ros/melodic/lib/libcpp_common.so

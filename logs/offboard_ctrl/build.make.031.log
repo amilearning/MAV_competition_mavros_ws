@@ -1,8 +1,0 @@
-[ 33%] [34m[1mGenerating dynamic reconfigure files from cfg/dyn_params.cfg: /home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/include/offboard_ctrl/dyn_paramsConfig.h /home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/lib/python2.7/dist-packages/offboard_ctrl/cfg/dyn_paramsConfig.py[0m
-Generating reconfiguration files for dyn_params in offboard_ctrl
-Wrote header file in /home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/include/offboard_ctrl/dyn_paramsConfig.h
-[ 33%] Built target offboard_ctrl_gencfg
-[35m[1mScanning dependencies of target offboard_ctrl[0m
-[ 66%] [32mBuilding CXX object CMakeFiles/offboard_ctrl.dir/src/offboard_ctrl.cpp.o[0m
-[100%] [32m[1mLinking CXX executable /home/hojin/drone_ws2/mavros_ws/devel/.private/offboard_ctrl/lib/offboard_ctrl/offboard_ctrl[0m
-[100%] Built target offboard_ctrl

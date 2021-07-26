@@ -25,6 +25,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/hojin/drone_ws2/mavros_ws/devel/.private/quadrotor_msgs/include"
   "/home/hojin/drone_ws2/mavros_ws/devel/.private/mav_msgs/include"
   "/home/hojin/drone_ws2/mavros_ws/devel/.private/planner_msgs/include"
+  "/home/hojin/drone_ws2/mavros_ws/devel/.private/darknet_ros_msgs/include"
   "/home/hojin/drone_ws2/mavros_ws/src/mavros/mav_comm/mav_msgs/include"
   "/home/hojin/drone_ws2/mavros_ws/src/mavros/libmavconn/include"
   "/home/hojin/drone_ws2/mavros_ws/src/mavros/mavros_msgs/include"

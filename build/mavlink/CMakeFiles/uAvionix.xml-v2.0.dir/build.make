@@ -60,7 +60,7 @@ uAvionix-v2.0-cxx-stamp: /home/hojin/drone_ws2/mavros_ws/src/mavlink/message_def
 uAvionix-v2.0-cxx-stamp: /home/hojin/drone_ws2/mavros_ws/src/mavlink/message_definitions/v1.0/common.xml
 uAvionix-v2.0-cxx-stamp: /home/hojin/drone_ws2/mavros_ws/src/mavlink/pymavlink/tools/mavgen.py
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hojin/drone_ws2/mavros_ws/build/mavlink/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating uAvionix-v2.0-cxx-stamp"
-	/usr/bin/env PYTHONPATH="/home/hojin/drone_ws2/mavros_ws/src/mavlink:/home/hojin/catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages" /usr/bin/python2 /home/hojin/drone_ws2/mavros_ws/src/mavlink/pymavlink/tools/mavgen.py --lang=C++11 --wire-protocol=2.0 --output=include/v2.0 /home/hojin/drone_ws2/mavros_ws/src/mavlink/message_definitions/v1.0/uAvionix.xml
+	/usr/bin/env PYTHONPATH="/home/hojin/drone_ws2/mavros_ws/src/mavlink:/home/hojin/drone_ws2/mavros_ws/devel/lib/python2.7/dist-packages:/home/hojin/catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages" /usr/bin/python2 /home/hojin/drone_ws2/mavros_ws/src/mavlink/pymavlink/tools/mavgen.py --lang=C++11 --wire-protocol=2.0 --output=include/v2.0 /home/hojin/drone_ws2/mavros_ws/src/mavlink/message_definitions/v1.0/uAvionix.xml
 	touch uAvionix-v2.0-cxx-stamp
 
 uAvionix.xml-v2.0: CMakeFiles/uAvionix.xml-v2.0
